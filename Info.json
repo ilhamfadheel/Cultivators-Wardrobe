@@ -1,1 +1,20 @@
-{"Name":"Cultivators Wardrobe","DisplayName":"Cultivators Wardrobe","GameVersion":1.17,"Version":3.52,"Desc":"[作者]\r\n    Beathoven\r\n[简介]\r\nClothing for Outer Disciples to do their Jobs better (Farming,Crafting etc.)\n\nClothing for Inner Disciples that boosts Qi and Cultivation.\n\nMidgame clothing for even better attributes.\n\nIts supposed to be kinda balanced. \n\n42 Clothing Items\n1 Sewing Table\n1 Loom\n5 Toolkits\nMore standard cloth colors\n\nNot all bonuses are listed in the Item desciptions.\n\nUpdate: (16.1)\nAdded: New Cloth sets with element (Law) affinity, Katana in Forge and a new Metal Bar.\nUpdat:24.01\nAdded: Capes with bonuses\nMore cloth and colors\nFixed White Tiger modifier bug.","Author":"Beathoven","UIPackage":null,"ID":"2320837906","Flag":-1148653882,"Tags":["Item","Equipment","Building","ExcludeRealmsHeaven","Non-Chinese","Non-Chinese"],"IncreasedDesc":"1.6 Added mental modifier to inner disciple clothes\n1.7 Added more detailed item descriptions\n1.71 reimplemented artifact clothes artifact craft bonus\n1.8 Added Toolkits, rearranged file structure\n1.85 lowered max qi of inner disciple cloth (was same as veteran)\n1.9 added Qi barrier to inner/veteran\n2.0 Added Loom / Cloth with Elemental poperites and Qi barrier.\n2.01 Added Earth Qi Cloth\n3.0 New Clothes and a Weapon\n3.5 New Clothes and colors / Capes with bonuses\n3.51 Fixed cape modifier bug\n3.52 Fixed White Qi Cloth","IsInsideCreat":false,"Previews":[],"ParentModInfo":null}
+{
+  "Name": "Cultivators Wardrobe",
+  "DisplayName": "Cultivators Wardrobe",
+  "GameVersion": 1.17,
+  "Desc": "[作者]\r\n    Beathoven\r\n[简介]\r\nClothing for Outer Disciples to do their Jobs better (Farming, Crafting etc.)\r\n\r\nClothing for Inner Disciples that boosts Qi and Cultivation.\r\n\r\nMidgame clothing for even better attributes.\r\n\r\nIt's supposed to be kinda balanced.\r\n\r\n42 Clothing Items\r\n1 Sewing Table\r\n1 Loom\r\n5 Toolkits\r\nMore standard cloth colors\r\n\r\nNot all bonuses are listed in the item descriptions.\r\n\r\nUpdate: (16.1)\r\nAdded: New cloth sets with element (Law) affinity, Katana in Forge, and a new Metal Bar.\r\n\r\nUpdate: 24.01\r\nAdded: Capes with bonuses\r\nMore cloth and colors\r\nFixed White Tiger modifier bug.",
+  "Author": "Beathoven",
+  "UIPackage": null,
+  "Flag": -1148653882,
+  "Tags": [
+    "Item",
+    "Equipment",
+    "Building",
+    "ExcludeRealmsHeaven",
+    "Non-Chinese",
+    "Non-Chinese"
+  ],
+  "IncreasedDesc": "1.6 Added mental modifier to inner disciple clothes\r\n1.7 Added more detailed item descriptions\r\n1.71 Reimplemented artifact clothes artifact craft bonus\r\n1.8 Added Toolkits, rearranged file structure\r\n1.85 Lowered max Qi of inner disciple cloth (was same as veteran)\r\n1.9 Added Qi barrier to inner/veteran\r\n2.0 Added Loom / Cloth with Elemental properties and Qi barrier\r\n2.01 Added Earth Qi Cloth\r\n3.0 New Clothes and a Weapon\r\n3.5 New Clothes and colors / Capes with bonuses\r\n3.51 Fixed cape modifier bug\r\n3.52 Fixed White Qi Cloth",
+  "IsInsideCreat": false,
+  "Dependencies": null
+}
