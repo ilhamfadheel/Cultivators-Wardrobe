@@ -1,0 +1,103 @@
+﻿
+<ModifierDefs>
+  <List>
+    <Modifier Name="ChefT">
+      <DisplayName>Chefs Tool</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <Skills>
+        <li Name="Cooking" Level="1" LevelOver="0" Type="1" />
+      </Skills>
+      <Properties>
+        <li Name="CookingSpeed" AddP="0.2" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="CookingSuccessChance" AddP="0.2" AddV="0" BAddP="0" BAddV="0" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	    <Modifier Name="CrafterT">
+      <DisplayName>Crafter Tool</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <Skills>
+        <li Name="Manual" Level="1" LevelOver="0" Type="1" />
+      </Skills>
+      <Properties>
+        <li Name="IntelligenceSkillEXPConstant" AddP="0.25" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="GlobalEfficiency" AddP="0" AddV="0.25" BAddP="0" BAddV="0" Type="1" />
+        <li Name="SmithingSpeed" AddP="0.25" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="HandworkSpeed" AddP="0.25" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="TailoringSpeed" AddP="0.25" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="MadeQualityAddValue" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	    <Modifier Name="FarmerT">
+      <DisplayName>Farmer Tool</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <Skills>
+        <li Name="Farming" Level="1" LevelOver="0" Type="1" />
+      </Skills>
+      <Properties>
+        <li Name="PlantWorkSpeed" AddP="0.25" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="PlantHarvestSpeed" AddP="0.25" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="PlantHarvestYieldEfficiency" AddP="0.2" AddV="0" BAddP="0" BAddV="0" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	    <Modifier Name="MedikitT">
+      <DisplayName>Medikit</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <Skills>
+        <li Name="Medicine" Level="1" LevelOver="0" Type="1" />
+      </Skills>
+      <Properties>
+        <li Name="DrugProductSpeed" AddP="0.15" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="TreatSpeed" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="TreatSuccessChance" AddP="0.2" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="TreatmentExpectQuality" AddP="0.15" AddV="0" BAddP="0" BAddV="0" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	    <Modifier Name="MinerT">
+      <DisplayName>Miner Tool</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <Skills>
+        <li Name="Mining" Level="1" LevelOver="0" Type="1" />
+      </Skills>
+	  	  	<SpecialFlags>
+			<li>FLAG_ITEM_RESURRECTION</li>
+		</SpecialFlags>
+      <Properties>
+        <li Name="IntelligenceSkillEXPConstant" AddP="0.25" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="GlobalEfficiency" AddP="0" AddV="0.25" BAddP="0" BAddV="0" Type="1" />
+        <li Name="MiningYieldEfficiency" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+        <li Name="MiningSpeed" AddP="0.3" AddV="0" BAddP="0" BAddV="0" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>	
+
+
+  </List>
+</ModifierDefs>

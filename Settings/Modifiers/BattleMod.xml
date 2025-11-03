@@ -1,0 +1,231 @@
+<ModifierDefs>
+  <List>
+
+    <Modifier Name="Battle_Fire_Top">
+      <DisplayName>Rise of the Phoenix 1</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0.5,0.5,0.5,0.5,0.5</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <Skills>
+        <li Name="Qi" Level="0" LevelOver="5" Type="2" />
+        <li Name="Fight" Level="0" LevelOver="5" Type="2" />
+        <li Name="Barrier" Level="0" LevelOver="5" Type="2" />
+       <li Name="Fabao" Level="0" LevelOver="5" Type="2" />
+      </Skills>
+      <Properties>
+	   <li Name="GongMatch_HuoAddV" AddV="0" AddP="0" BAddV="0.25" Type="2" />
+        <li Name="NutritionWaterAutoRecover" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+		<li Name="LingAbsorbSpeed" AddP="0" AddV="0" BAddP="0" BAddV="5" Type="1" />
+        <li Name="NpcLingMaxValue" AddP="0.35" AddV="0" BAddP="0" BAddV="2000" Type="2" />
+        <li Name="NpcFight_FabaoMaxLingAddP" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0" AddV="1.5" BAddP="0" BAddV="0" Type="2" />
+		<li Name="MindStateBaseValue" AddP="0" AddV="10" BAddP="0" BAddV="0" Type="1" />
+        <li Name="SpeedOfMindStateCoefficient" AddP="0.15" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="MoveSpeed" AddP="0.2" AddV="0" BAddP="0" BAddV="0" Type="2" />
+		<li Name="AbilityLvAddV" AddV="-15" AddP="0" BAddV="0" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.0" AddP="0" BAddV="0.25" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToMu" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToJin" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToShui" AddV="0" AddP="0" BAddV="-0.1" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToTu" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+</Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	 <Modifier Name="Battle_Fire_Down" Parent="Battle_Fire_Top">
+	 <DisplayName>Rise of the Phoenix 2</DisplayName>
+	</Modifier>	
+	
+	
+		    <Modifier Name="Battle_Wood_Top" >
+      <DisplayName>Rise of Gaia 1</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0.5,0.5,0.5,0.5,0.5</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+	        <Skills>
+        <li Name="Qi" Level="0" LevelOver="5" Type="2" />
+        <li Name="Fight" Level="0" LevelOver="5" Type="2" />
+        <li Name="Barrier" Level="0" LevelOver="5" Type="2" />
+       <li Name="Fabao" Level="0" LevelOver="5" Type="2" />
+      </Skills>
+      <Properties>
+		<li Name="GongMatch_MuAddV" AddV="0" AddP="0" BAddV="0.25" Type="2" />
+        <li Name="NutritionWaterAutoRecover" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+		<li Name="LingAbsorbSpeed" AddP="0" AddV="0" BAddP="0" BAddV="5" Type="1" />
+        <li Name="NpcLingMaxValue" AddP="0.35" AddV="0" BAddP="0" BAddV="2000" Type="2" />
+        <li Name="NpcFight_FabaoMaxLingAddP" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="2" />
+		<li Name="MindStateBaseValue" AddP="0" AddV="10" BAddP="0" BAddV="0" Type="1" />
+        <li Name="SpeedOfMindStateCoefficient" AddP="0.15" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="MoveSpeed" AddP="0.2" AddV="0" BAddP="0" BAddV="0" Type="2" />
+		<li Name="AbilityLvAddV" AddV="-15" AddP="0" BAddV="0" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.0" AddP="0" BAddV="-0.1" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToMu" AddV="0" AddP="0" BAddV="0.25" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToJin" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToShui" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToTu" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	 <Modifier Name="Battle_Wood_Down" Parent="Battle_Wood_Top">
+	 <DisplayName>Rise of Gaia 2</DisplayName>
+	</Modifier>	
+	
+	
+		    <Modifier Name="Battle_Water_Top" >
+      <DisplayName>Rise of the Waterdragon 1</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0.5,0.5,0.5,0.5,0.5</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+	        <Skills>
+        <li Name="Qi" Level="0" LevelOver="5" Type="2" />
+        <li Name="Fight" Level="0" LevelOver="5" Type="2" />
+        <li Name="Barrier" Level="0" LevelOver="5" Type="2" />
+       <li Name="Fabao" Level="0" LevelOver="5" Type="2" />
+      </Skills>
+      <Properties>
+		<li Name="GongMatch_ShuiAddV" AddV="0" AddP="0" BAddV="0.25" Type="2" />
+		<li Name="NutritionWaterAutoRecover" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+		<li Name="LingAbsorbSpeed" AddP="0" AddV="0" BAddP="0" BAddV="5" Type="1" />
+        <li Name="NpcLingMaxValue" AddP="0.35" AddV="0" BAddP="0" BAddV="2000" Type="2" />
+        <li Name="NpcFight_FabaoMaxLingAddP" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="2" />
+		<li Name="MindStateBaseValue" AddP="0" AddV="10" BAddP="0" BAddV="0" Type="1" />
+        <li Name="SpeedOfMindStateCoefficient" AddP="0.15" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="MoveSpeed" AddP="0.2" AddV="0" BAddP="0" BAddV="0" Type="2" />
+		<li Name="AbilityLvAddV" AddV="-15" AddP="0" BAddV="0" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.0" AddP="0" BAddV="0.05" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToMu" AddV="0" AddP="0" BAddV="-0.1" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToJin" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToShui" AddV="0" AddP="0" BAddV="0.25" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToTu" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	 <Modifier Name="Battle_Water_Down" Parent="Battle_Water_Top">
+	 <DisplayName>Rise of the Waterdragon 2</DisplayName>
+	</Modifier>	
+	
+	
+		    <Modifier Name="Battle_Earth_Top" >
+      <DisplayName>Rise of Xuán Wǔ 1</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0.5,0.5,0.5,0.5,0.5</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+	        <Skills>
+        <li Name="Qi" Level="0" LevelOver="5" Type="2" />
+        <li Name="Fight" Level="0" LevelOver="5" Type="2" />
+        <li Name="Barrier" Level="0" LevelOver="5" Type="2" />
+       <li Name="Fabao" Level="0" LevelOver="5" Type="2" />
+      </Skills>
+      <Properties>
+		<li Name="GongMatch_TuAddV" AddV="0" AddP="0" BAddV="0.25" Type="2" />
+        <li Name="NutritionWaterAutoRecover" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+		<li Name="LingAbsorbSpeed" AddP="0" AddV="0" BAddP="0" BAddV="5" Type="1" />
+        <li Name="NpcLingMaxValue" AddP="0.35" AddV="0" BAddP="0" BAddV="2000" Type="2" />
+        <li Name="NpcFight_FabaoMaxLingAddP" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="2" />
+		<li Name="MindStateBaseValue" AddP="0" AddV="10" BAddP="0" BAddV="0" Type="1" />
+        <li Name="SpeedOfMindStateCoefficient" AddP="0.15" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="MoveSpeed" AddP="0.2" AddV="0" BAddP="0" BAddV="0" Type="2" />
+		<li Name="AbilityLvAddV" AddV="-15" AddP="0" BAddV="0" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.0" AddP="0" BAddV="0.05" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToMu" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToJin" AddV="0" AddP="0" BAddV="-0.1" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToShui" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToTu" AddV="0" AddP="0" BAddV="0.25" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	 <Modifier Name="Battle_Earth_Down" Parent="Battle_Earth_Top">
+	 <DisplayName>Rise of Xuán Wǔ 2</DisplayName>
+	</Modifier>	
+	
+	
+		    <Modifier Name="Battle_Metal_Top" >
+      <DisplayName>Rise of the White Tiger 1</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0.5,0.5,0.5,0.5,0.5</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+	        <Skills>
+        <li Name="Qi" Level="0" LevelOver="5" Type="2" />
+        <li Name="Fight" Level="0" LevelOver="5" Type="2" />
+        <li Name="Barrier" Level="0" LevelOver="5" Type="2" />
+       <li Name="Fabao" Level="0" LevelOver="5" Type="2" />
+      </Skills>
+      <Properties>
+		<li Name="GongMatch_JinAddV" AddV="0" AddP="0" BAddV="0.25" Type="2" />
+        <li Name="NutritionWaterAutoRecover" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+		<li Name="LingAbsorbSpeed" AddP="0" AddV="0" BAddP="0" BAddV="5" Type="1" />
+        <li Name="NpcLingMaxValue" AddP="0.35" AddV="0" BAddP="0" BAddV="2000" Type="2" />
+        <li Name="NpcFight_FabaoMaxLingAddP" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="2" />
+		<li Name="MindStateBaseValue" AddP="0" AddV="10" BAddP="0" BAddV="0" Type="1" />
+        <li Name="SpeedOfMindStateCoefficient" AddP="0.15" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="MoveSpeed" AddP="0.2" AddV="0" BAddP="0" BAddV="0" Type="2" />
+		<li Name="AbilityLvAddV" AddV="-15" AddP="0" BAddV="0" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.0" AddP="0" BAddV="0.05" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToMu" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToJin" AddV="0" AddP="0" BAddV="0.25" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToShui" AddV="0" AddP="0" BAddV="-0.1" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToTu" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	 <Modifier Name="Battle_Metal_Down" Parent="Battle_Metal_Top">
+	 <DisplayName>Rise of the White Tiger 2</DisplayName>
+	</Modifier>	
+	
+	  <Modifier Name="Battle_Elementless_Top" >
+      <DisplayName>Elementless 1</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0.5,0.5,0.5,0.5,0.5</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+	        <Skills>
+        <li Name="Qi" Level="0" LevelOver="5" Type="2" />
+        <li Name="Fight" Level="0" LevelOver="5" Type="2" />
+        <li Name="Barrier" Level="0" LevelOver="5" Type="2" />
+       <li Name="Fabao" Level="0" LevelOver="5" Type="2" />
+      </Skills>
+      <Properties>
+		<li Name="GongMatch_NoneAddV" AddV="0" AddP="0" BAddV="0.25" Type="2" />
+        <li Name="NutritionWaterAutoRecover" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+		<li Name="LingAbsorbSpeed" AddP="0" AddV="0" BAddP="0" BAddV="5" Type="1" />
+        <li Name="NpcLingMaxValue" AddP="0.35" AddV="0" BAddP="0" BAddV="2000" Type="2" />
+        <li Name="NpcFight_FabaoMaxLingAddP" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="2" />
+		<li Name="MindStateBaseValue" AddP="0" AddV="10" BAddP="0" BAddV="0" Type="1" />
+        <li Name="SpeedOfMindStateCoefficient" AddP="0.15" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="MoveSpeed" AddP="0.2" AddV="0" BAddP="0" BAddV="0" Type="2" />
+		<li Name="AbilityLvAddV" AddV="-15" AddP="0" BAddV="0" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.0" AddP="0" BAddV="0.05" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToMu" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToJin" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToShui" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToTu" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	 <Modifier Name="Battle_Elementless_Down" Parent="Battle_Elementless_Top">
+	 <DisplayName>Elementless 2</DisplayName>
+	</Modifier>	
+	
+  </List>
+</ModifierDefs>

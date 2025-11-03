@@ -1,0 +1,163 @@
+﻿<ThingDefs><List>
+	<ThingDef Type="Building" Name="CWTailorTable" Parent="ProductionBase">	
+	<ThingName>Wardrobe Sewing Table</ThingName>
+	<Desc>Sewing Table for Cultivators Wardrobe</Desc>
+	<TexPath>res/Sprs/buildingnew/building_tailorplace1a</TexPath>
+	<TexScale>0.67</TexScale>
+	<BlockLight>1</BlockLight>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<Beauty>5</Beauty>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+			[1,3],
+			[4,4],
+		</Data>
+		<OffsetGroup>
+			<li><x>0.45</x><y>0.55</y></li>
+			<li><x>0.33</x><y>-0.17</y></li>
+			<li><x>-0.52</x><y>0.68</y></li>
+			<li><x>-0.31</x><y>0.85</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="-0.55" Y="0.55" Ang="1" Dir="Down"/>
+			<li Index="0" X="0.3" Y="0.4" Ang="1" Dir="Left"/>
+			<li Index="0" X="0.5" Y="-0.55" Ang="1" Dir="Up"/>
+			<li Index="0" X="-0.25" Y="-0.55" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<WorkTexPath>res/Sprs/buildingnew/building_tailorplace1b</WorkTexPath>
+		<Orientation>F,B,R</Orientation>
+		<BePackage>1</BePackage>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>assemble</WorkAnimation>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>10</CostStuffCount>
+			<CostItems>
+					<Item name = "Item_RoughWoodBlock" count = "12"/>
+			</CostItems>
+		</BeMade>
+		<SnowRenderData>
+			<x>2.74</x>
+			<y>3.87</y>
+			<z>1</z>
+		</SnowRenderData>
+		<ProducePriority>1</ProducePriority>
+		<ProduceKind>Sew</ProduceKind>
+
+	</Building>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="CWTextileTable" Parent="ProductionBase">	
+	<ThingName>Wardrobe Loom</ThingName>
+	<Frags>		
+		<li Frag="HearTrain" />
+	</Frags>
+	<Desc>Loom for Cultivators Wardrobe cloth.</Desc>
+	<TexPath>res/Sprs/buildingnew/building_spinplace1a</TexPath>
+	<TexScale>0.75</TexScale>
+	<BlockLight>1</BlockLight>
+	<SelectAble>1</SelectAble>	
+	<CastShadow>1</CastShadow>
+	<Beauty>5</Beauty>
+	<Collider>
+		<!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+		<Data>
+			[1,1],
+			[3,1],
+			[4,0],
+		</Data>
+		<OffsetGroup>
+			<li><x>-0.5</x><y>-0.14</y></li>
+			<li><x>-0.5</x><y>0.91</y></li>
+			<li><x>0.52</x><y>0.91</y></li>
+			<li><x>0.59</x><y>0</y></li>
+		</OffsetGroup>
+		<WorkOffset>
+			<li Index="0" X="0.5" Y="0.55" Ang="1" Dir="Down"/>
+			<li Index="0" X="0.3" Y="-0.7" Ang="1" Dir="Left"/>
+			<li Index="0" X="-0.5" Y="-0.6" Ang="1" Dir="Up"/>
+			<li Index="0" X="-0.3" Y="0.55" Ang="1" Dir="Right"/>
+		</WorkOffset>
+	</Collider>
+	<Building>
+		<Orientation>F,B,R</Orientation>
+		<BePackage>1</BePackage>
+		<TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+		<CanMakeRoom>0</CanMakeRoom>
+		<WorkAnimation>weave</WorkAnimation>
+		<BeMade>
+			<WorkToMake>150</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>12</CostStuffCount>
+			<CostItems>
+				<Item name = "Item_RoughWoodBlock" count = "14"/>
+			</CostItems>
+		</BeMade>
+		<SnowRenderData>
+			<x>3.2</x>
+			<y>3.91</y>
+			<z>1</z>
+		</SnowRenderData>
+				<ProducePriority>1</ProducePriority>
+		<ProduceKind>Sew</ProduceKind>
+<Produces>
+			<!--			<Produce>
+				<ThingDef>Item_QiCloth_Water</ThingDef>
+				<Display>text1</Display>
+				<Count>40</Count>
+			</Produce>
+						<Produce>
+				<ThingDef>Item_QiCloth_Metal</ThingDef>
+				<Count>40</Count>
+			</Produce>
+						<Produce>
+				<ThingDef>Item_QiCloth_Fire</ThingDef>
+				<Count>40</Count>
+			</Produce>
+												<Produce>
+				<ThingDef>Item_QiCloth_Earth</ThingDef>
+				<Count>40</Count>
+			</Produce>
+			
+						<Produce>
+				<ThingDef>Item_QiCloth_None</ThingDef>
+				<Count>40</Count>
+			</Produce>
+						<Produce>
+				<ThingDef>Item_QiCloth_LightBlue</ThingDef>
+				<Count>40</Count>
+			</Produce>
+						<Produce>
+				<ThingDef>Item_QiCloth_Black</ThingDef>
+				<Count>40</Count>
+			</Produce>
+						<Produce>
+				<ThingDef>Item_QiCloth_Orange</ThingDef>
+				<Count>40</Count>
+			</Produce>
+									<Produce>
+				<ThingDef>Item_QiCloth_Violet</ThingDef>
+				<Count>40</Count>
+			</Produce> -->
+</Produces> 
+	</Building>
+	</ThingDef>
+	
+	  </List>
+</ThingDefs>

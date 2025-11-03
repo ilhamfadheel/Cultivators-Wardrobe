@@ -1,0 +1,102 @@
+<ThingDefs>
+<List>
+
+	<ThingDef Type="Item" Name="Item_CW_TemperedSteel" Parent="MetalBlockBase">
+	<ThingName>Tempered Steel</ThingName>
+	<TexPath>res\Sprs\object\object_blackironingot</TexPath>	
+	<Desc>Qi Enriched Steel.</Desc>
+	<Color>4F4B4BFF</Color>
+	<Rate>10</Rate>
+	<Beauty>12</Beauty>
+	<ElementKind>Chaos</ElementKind>
+	<Item>
+		<Prices>
+			<TalkType>5</TalkType>
+			<BaseCount>5</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="300"/>
+				<SalePrice Value="40" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="400" />
+				<SalePrice Value="60" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<PhysicalLables>
+			<li>Heavy2</li>
+			<li>Hard2</li>
+		</PhysicalLables>
+		
+	<BeMaterial>
+			<NamePrefix>Tempered</NamePrefix>
+			<CostMultiplier>2</CostMultiplier>
+			
+			<RateWhenBeMain>10</RateWhenBeMain>
+			<WorkSpeedCoefficientWhenBeMain>2</WorkSpeedCoefficientWhenBeMain>
+			<ColorWhenBeMain>4F4B4BFF</ColorWhenBeMain>
+			<SharpDamageMultiplier>13</SharpDamageMultiplier>
+			<BluntDamageMultiplier>13</BluntDamageMultiplier>
+			<LingDamageMultiplier>13</LingDamageMultiplier>
+			<AttackSpeedWhenBeMain>0.4</AttackSpeedWhenBeMain>
+			
+			<SharpDefenceMultiplier>13</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>13</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>13</LingDefenceMultiplier>
+			<ColdInsulationMultiplier>13</ColdInsulationMultiplier>
+			<HeatInsulationMultiplier>13</HeatInsulationMultiplier>
+			<LingShieldWhenBeMain>0.5</LingShieldWhenBeMain>
+			<MaxHitPointsPerNum>50</MaxHitPointsPerNum>
+			<LingNumberRate>1</LingNumberRate>
+			
+			<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>12</BeautyWhenBeMain>
+			<ElementPowerWhenBeMain>10</ElementPowerWhenBeMain>
+			
+			<WorktoMakeRate>5.2</WorktoMakeRate>
+			<WorktoBuildRate>8</WorktoBuildRate>
+		</BeMaterial>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_DarksteelRock" count = "1"/>
+				<Item name = "Item_MonsterBlood" count = "3"/>
+				<Item name = "Item_IronRock" count = "1"/>
+				<Item name = "Item_CopperRock" count = "1"/>
+				<Item name = "Item_SilverRock" count = "1"/>
+				<Item name=  "Item_LingWood" count="1" />
+				<Item name = "Item_Water" count = "10"/>
+				<Item name="Item_LingStone" count="100" />
+			</CostItems>
+		</BeMade> 
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.06</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>38</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Jin</Kind>
+		<Value>8</Value>         
+		<Radius>3</Radius>
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+		      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>Furnace</Building>
+            <Count>2</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+	</ThingDef>
+</List>
+</ThingDefs>

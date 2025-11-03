@@ -1,0 +1,139 @@
+<ModifierDefs>
+  <List>
+
+    <Modifier Name="Fire_Cape">
+      <DisplayName>Rise of the Phoenix 3</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <Skills>
+        <li Name="Barrier" Level="0" LevelOver="1" Type="2" />
+      </Skills>
+      <Properties>
+	    <li Name="WorldMapFlySpeedAddP" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+        <li Name="ExperienceFindSpeedAddV" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+        <li Name="NpcFight_FabaoPowerAddP" AddP="0" AddV="0" BAddP="2" BAddV="0" Type="3" />
+	    <li Name="GongMatch_HuoAddV" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+        <li Name="MoveSpeed" AddP="0.4" AddV="0" BAddP="0" BAddV="0" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.0" AddP="0" BAddV="0.1" Type="2" />
+</Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+
+		    <Modifier Name="Wood_Cape" >
+      <DisplayName>Rise of Gaia 3</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+	        <Skills>
+        <li Name="Barrier" Level="0" LevelOver="1" Type="2" />
+      </Skills>
+      <Properties>
+	  	    <li Name="WorldMapFlySpeedAddP" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+        <li Name="ExperienceFindSpeedAddV" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+        <li Name="NpcFight_FabaoPowerAddP" AddP="0" AddV="0" BAddP="2" BAddV="0" Type="3" />
+		<li Name="GongMatch_MuAddV" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+        <li Name="MoveSpeed" AddP="0.4" AddV="0" BAddP="0" BAddV="0" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToMu" AddV="0" AddP="0" BAddV="0.1" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	
+		    <Modifier Name="Water_Cape" >
+      <DisplayName>Rise of the Waterdragon 3</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+	        <Skills>
+        <li Name="Barrier" Level="0" LevelOver="1" Type="2" />
+      </Skills>
+      <Properties>
+	  	    <li Name="WorldMapFlySpeedAddP" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+        <li Name="ExperienceFindSpeedAddV" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+        <li Name="NpcFight_FabaoPowerAddP" AddP="0" AddV="0" BAddP="2" BAddV="0" Type="3" />
+		<li Name="GongMatch_ShuiAddV" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+        <li Name="MoveSpeed" AddP="0.4" AddV="0" BAddP="0" BAddV="0" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToShui" AddV="0" AddP="0" BAddV="0.1" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+		    <Modifier Name="Earth_Cape" >
+      <DisplayName>Rise of Xuán Wǔ 3</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+	        <Skills>
+        <li Name="Barrier" Level="0" LevelOver="1" Type="2" />
+      </Skills>
+      <Properties>
+	    <li Name="WorldMapFlySpeedAddP" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+        <li Name="ExperienceFindSpeedAddV" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+        <li Name="NpcFight_FabaoPowerAddP" AddP="0" AddV="0" BAddP="2" BAddV="0" Type="3" />
+		<li Name="GongMatch_TuAddV" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+        <li Name="MoveSpeed" AddP="0.4" AddV="0" BAddP="0" BAddV="0" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToTu" AddV="0" AddP="0" BAddV="0.1" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	<Modifier Name="Metal_Cape" >
+      <DisplayName>Rise of the White Tiger 3</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+	        <Skills>
+        <li Name="Barrier" Level="0" LevelOver="1" Type="2" />
+      </Skills>
+      <Properties>
+	    <li Name="WorldMapFlySpeedAddP" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+        <li Name="ExperienceFindSpeedAddV" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+        <li Name="NpcFight_FabaoPowerAddP" AddP="0" AddV="0" BAddP="2" BAddV="0" Type="3" />
+	    <li Name="GongMatchJinAddV" AddV="0" AddP="0" BAddV="0.05" Type="2" />
+        <li Name="MoveSpeed" AddP="0.4" AddV="0" BAddP="0" BAddV="0" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToJin" AddV="0" AddP="0" BAddV="0.1" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	  <Modifier Name="Elementless_Cape" >
+      <DisplayName>Elementless 3</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+	        <Skills>
+        <li Name="Barrier" Level="0" LevelOver="1" Type="2" />
+      </Skills>
+      <Properties>
+	    <li Name="WorldMapFlySpeedAddP" AddP="0" AddV="2" BAddP="0" BAddV="0" Type="1" />
+        <li Name="ExperienceFindSpeedAddV" AddP="0" AddV="2" BAddP="0" BAddV="0" Type="1" />
+        <li Name="NpcFight_FabaoPowerAddP" AddP="0" AddV="0" BAddP="6" BAddV="0" Type="3" />
+		<li Name="GongMatch_NoneAddV" AddV="0" AddP="0" BAddV="0.1" Type="2" />
+        <li Name="NpcLingMaxValue" AddP="0.35" AddV="0" BAddP="0" BAddV="500" Type="2" />
+		<li Name="MindStateBaseValue" AddP="0" AddV="5" BAddP="0" BAddV="0" Type="1" />
+        <li Name="MoveSpeed" AddP="0.8" AddV="0" BAddP="0" BAddV="0" Type="2" />
+		<li Name="AbilityLvAddV" AddV="-10" AddP="0" BAddV="0" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.0" AddP="0" BAddV="0.12" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToMu" AddV="0" AddP="0" BAddV="0.12" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToJin" AddV="0" AddP="0" BAddV="0.12" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToShui" AddV="0" AddP="0" BAddV="0.12" Type="2" />
+		<li Name="NpcFight_ShieldResistanceToTu" AddV="0" AddP="0" BAddV="0.12" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+  </List>
+</ModifierDefs>

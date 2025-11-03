@@ -1,0 +1,67 @@
+<ThingDefs>
+<List>
+
+<ThingDef Type="Item" Name="Item_CW_Katana" Parent="WeaponBase">
+		<ThingName>Katana</ThingName>
+      <TexPath>Object/katana.png</TexPath>
+		<Desc>A piece of art.</Desc>
+		<Beauty>95</Beauty>
+	<MaxStack>1</MaxStack>	
+	<Rate>12</Rate>
+	<NotRandom>2</NotRandom>
+	<ElementKind>Chaos</ElementKind>
+	<Item Lable="Weapon">
+		<FabaoSuffix>剑</FabaoSuffix>
+	<NotRandom>2</NotRandom>		
+		<PhysicalLables>
+				<li>GreatThing_Ling</li>
+				<li>GreatThing_Attack</li>
+		</PhysicalLables>	
+		
+		<BeMade>
+<WorkToMake>600</WorkToMake>
+<StuffCategories>
+<Stuff name = "MetalBlock"/>
+</StuffCategories>
+<CostStuffCount>5</CostStuffCount>
+</BeMade>
+		
+		<Equip>	
+			<Damage>55</Damage>
+			<AttackSpeed>1.5</AttackSpeed>
+			<AttackRange>2</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut1" Rate="0.4"/>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.3"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.3"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="LJpugong1" HitPoint="11"/>
+				<li Name="LJpugong2" HitPoint="9"/>
+				<li Name="LJpugong3" HitPoint="15"/>
+				<li Name="LJpugong4" HitPoint="9"/>
+			</AtkAnis>
+			<WeaponKind>Sword</WeaponKind>		
+			<ModPath>Mod/Weapon/katana4.fbx</ModPath>
+		</Equip>		
+	</Item>
+	<Ling>
+		<AddionLing>35</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.9</AddionFailing>
+		<AddionFailRadius>2</AddionFailRadius>
+		<Attenuation>0.1</Attenuation>
+		<Absorption>1</Absorption>
+		<Accommodate>10000</Accommodate>
+	</Ling>
+	      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>WeaponMaker</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+	</ThingDef>
+</List>
+</ThingDefs>

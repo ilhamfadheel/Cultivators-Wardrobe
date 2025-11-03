@@ -1,0 +1,460 @@
+<ThingDefs><List>
+
+<ThingDef Type="Item" Name="Item_QiCloth_Base">
+<TexPath>res/Sprs/object/object_ApieceOfCloth</TexPath>
+<Desc>Cloth made from various materials to strengthen the [color=#49b675]Wood[/color] Qi it contains.Clothes made will have [color=#ff7b00]Qi Barrier[/color] bonus.</Desc>
+<MaxStack>999</MaxStack>
+<Beauty>10</Beauty>
+<Rate>10</Rate>
+<ElementKind>None</ElementKind>
+<Flammability>
+<Flammability>0</Flammability>
+<FlameSpawnThingDef></FlameSpawnThingDef>
+<FlameSpawnChance>0</FlameSpawnChance>
+<BurningPoint>500</BurningPoint>
+</Flammability>
+<Item Lable="Cloth">
+<NotFengshuiItem>1</NotFengshuiItem>
+<NotRandom>1</NotRandom>
+<FuelMultiplier>1</FuelMultiplier>
+<BeMaterial>
+
+<RateWhenBeMain>10</RateWhenBeMain>
+<CostMultiplier>1</CostMultiplier>
+<NamePrefix>Wood Qi</NamePrefix>
+<ElementPowerWhenBeMain>5</ElementPowerWhenBeMain>
+			<LingShieldWhenBeMain>0.5</LingShieldWhenBeMain>
+			<TemperatureMaxAddWhenBeMain>50</TemperatureMaxAddWhenBeMain>
+			<TemperatureMinAddWhenBeMain>-50</TemperatureMinAddWhenBeMain>
+
+<MaxHitPointsPerNum>20</MaxHitPointsPerNum>
+<LingNumberRate>1</LingNumberRate>
+<FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+<BeautyWhenBeMain>8</BeautyWhenBeMain>
+<WorktoMakeRate>1</WorktoMakeRate>
+<WorktoBuildRate>1</WorktoBuildRate>
+</BeMaterial>
+<BeMade>
+<WorkToMake>35</WorkToMake>
+		<CostItems>
+		    <Item name="Item_Cotton" count="40" />
+            <Item name="Item_LingWoodBlock" count="1" />
+            <Item name="Item_Ginseng" count="1" />
+            <Item name="Item_GanodermaLucidum" count="1" />
+			<Item name="Item_LingStone" count = "10"/>
+			<Item name="Item_MagicHerb" count="5" />
+		</CostItems>
+</BeMade>
+</Item>
+<Light>
+<Value>10</Value>
+<Failing>0.6</Failing>
+<FailRadius>1</FailRadius>
+<Radius>1</Radius>
+<Color>FFFFFFFF</Color>
+</Light>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_QiCloth_Wood" Parent="Item_QiCloth_Base">
+<ThingName>Qi Cloth [Wood]</ThingName>
+<Desc>Cloth made from various materials to strengthen the [color=#49b675]Wood[/color] Qi it contains.Clothes made will have [color=#ff7b00]Qi Barrier[/color] bonus.</Desc>
+<ElementKind>Mu</ElementKind>
+<Color>#49b675</Color>
+<Item Lable="Cloth">
+
+<BeMaterial>
+<RateWhenBeMain>10</RateWhenBeMain>
+<CostMultiplier>1</CostMultiplier>
+<NamePrefix>Wood Qi</NamePrefix>
+<ClothesColorID>3</ClothesColorID>
+<ColorWhenBeMain>#49b675</ColorWhenBeMain>
+<ColorWhenBeFloor>#49b675</ColorWhenBeFloor>
+<ColorWhenBeCape>#49b675</ColorWhenBeCape>
+</BeMaterial>
+</Item>
+     <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTextileTable</Building>
+            <Count>40</Count>
+          </li>
+        </ProduceBuildings>
+		</ProduceMode>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_QiCloth_Fire" Parent="Item_QiCloth_Base">
+<ThingName>Qi Cloth [Fire]</ThingName>
+<Desc>Cloth made from various materials to strengthen the [color=#fe3e3e]Fire[/color] Qi it contains.Clothes made will have [color=#ff7b00]Qi Barrier[/color] bonus. </Desc>
+<ElementKind>Huo</ElementKind>
+<Color>#fe3e3e</Color>
+<Item Lable="Cloth">
+
+	<BeMaterial>
+			<RateWhenBeMain>10</RateWhenBeMain>
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>Fire Qi</NamePrefix>
+			<ClothesColorID>6</ClothesColorID>
+			<ColorWhenBeMain>#fe3e3e</ColorWhenBeMain>
+			<ColorWhenBeFloor>#fe3e3e</ColorWhenBeFloor>
+				<ColorWhenBeCape>#fe3e3e</ColorWhenBeCape>
+			
+	</BeMaterial>
+</Item>
+<Light>
+<Color>#fe3e3e</Color>
+</Light>
+     <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTextileTable</Building>
+            <Count>40</Count>
+          </li>
+        </ProduceBuildings>
+		</ProduceMode>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_QiCloth_Water" Parent="Item_QiCloth_Base">
+<ThingName>Qi Cloth [Water]</ThingName>
+<Desc>Cloth made from various materials to strengthen the [color=#0b3cbf]Water[/color] Qi it contains.Clothes made will have [color=#ff7b00]Qi Barrier[/color] bonus. </Desc>
+<ElementKind>Shui</ElementKind>
+<Color>#0b3cbf</Color>
+<Item Lable="Cloth">
+
+	<BeMaterial>
+	
+			<RateWhenBeMain>10</RateWhenBeMain>
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>Water Qi</NamePrefix>
+			<ClothesColorID>5</ClothesColorID>
+			<ColorWhenBeMain>0b3cbf</ColorWhenBeMain>
+			<ColorWhenBeFloor>0b3cbf</ColorWhenBeFloor>
+			<ColorWhenBeCape>#0b3cbf</ColorWhenBeCape>			
+	</BeMaterial>
+</Item>
+<Light>
+<Color>#0b3cbf</Color>
+</Light>
+     <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTextileTable</Building>
+            <Count>40</Count>
+          </li>
+        </ProduceBuildings>
+		</ProduceMode>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_QiCloth_Metal" Parent="Item_QiCloth_Base">
+<ThingName>Qi Cloth [Metal]</ThingName>
+<Desc>Cloth made from various materials to strengthen the Qi [color=#e7bd42]Metal[/color] it contains.Clothes made will have [color=#ff7b00]Qi Barrier[/color] bonus. </Desc>
+<ElementKind>Jin</ElementKind>
+<Color>#e7bd42</Color>
+<Item Lable="Cloth">
+
+	<BeMaterial>
+			<RateWhenBeMain>10</RateWhenBeMain>
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>Metal Qi</NamePrefix>
+			<ClothesColorID>4</ClothesColorID>
+			<ColorWhenBeMain>#e7bd42</ColorWhenBeMain>
+			<ColorWhenBeFloor>#e7bd42</ColorWhenBeFloor>
+			<ColorWhenBeCape>#F6ED77</ColorWhenBeCape>
+
+	</BeMaterial>
+</Item>
+<Light>
+<Color>#e7bd42</Color>
+</Light>
+     <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTextileTable</Building>
+            <Count>40</Count>
+          </li>
+        </ProduceBuildings>
+		</ProduceMode>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_QiCloth_Earth" Parent="Item_QiCloth_Base">
+<ThingName>Qi Cloth [Earth]</ThingName>
+<Desc>Cloth made from various materials to strengthen the [color=#7e5945]Earth[/color] Qi it contains.Clothes made will have [color=#ff7b00]Qi Barrier[/color] bonus. </Desc>
+<ElementKind>Tu</ElementKind>
+<Color>#7e5945</Color>
+<Item Lable="Cloth">
+
+	<BeMaterial>
+			<RateWhenBeMain>10</RateWhenBeMain>
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>Earth Qi</NamePrefix>
+			<ClothesColorID>3</ClothesColorID>
+			<ColorWhenBeMain>#7e5945</ColorWhenBeMain>
+			<ColorWhenBeFloor>7e5945</ColorWhenBeFloor>
+			<ColorWhenBeCape>#7e5945</ColorWhenBeCape>
+	</BeMaterial>
+</Item>
+<Light>
+<Color>#7e5945</Color>
+</Light>
+     <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTextileTable</Building>
+            <Count>40</Count>
+          </li>
+        </ProduceBuildings>
+		</ProduceMode>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_QiCloth_None" Parent="Item_QiCloth_Base">
+<ThingName>Qi Cloth White</ThingName>
+<Desc>Cloth made from various materials to strengthen the Qi it contains.Clothes made will have [color=#ff7b00]Qi Barrier[/color] bonus. </Desc>
+<ElementKind>None</ElementKind>
+<Color>#ffffff</Color>
+<Item Lable="Cloth">
+
+	<BeMaterial>
+			<RateWhenBeMain>10</RateWhenBeMain>
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>Elementless Qi</NamePrefix>
+			<ClothesColorID>14</ClothesColorID>
+			<ColorWhenBeMain>#ffffff</ColorWhenBeMain>
+			<ColorWhenBeFloor>#ffffff</ColorWhenBeFloor>
+			<ColorWhenBeCape>#ffffff</ColorWhenBeCape>
+	</BeMaterial>
+</Item>
+<Light>
+<Color>#ffffff</Color>
+</Light>
+     <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTextileTable</Building>
+            <Count>40</Count>
+          </li>
+        </ProduceBuildings>
+		</ProduceMode>
+
+
+</ThingDef> 
+
+<ThingDef Type="Item" Name="Item_QiCloth_Black" Parent="Item_QiCloth_Base">
+<ThingName>Black Qi Cloth</ThingName>
+<Desc>Cloth made from various materials to strengthen the Qi it contains.Clothes made will have [color=#ff7b00]Qi Barrier[/color] bonus. </Desc>
+<ElementKind>None</ElementKind>
+<Color>4F4B4BFF</Color>
+<Item Lable="Cloth">
+
+	<BeMaterial>
+			<RateWhenBeMain>10</RateWhenBeMain>
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>Elementless Qi</NamePrefix>
+						<ClothesColorID>12</ClothesColorID>
+			<ColorWhenBeMain>#111111</ColorWhenBeMain>
+			<ColorWhenBeFloor>#111111</ColorWhenBeFloor>
+			<ColorWhenBeCape>696969FF</ColorWhenBeCape>
+	</BeMaterial>
+</Item>
+<Light>
+<Color>#111111</Color>
+</Light>
+     <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTextileTable</Building>
+            <Count>40</Count>
+          </li>
+        </ProduceBuildings>
+		</ProduceMode>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_QiCloth_LightBlue" Parent="Item_QiCloth_Base">
+<ThingName>Azure Qi Cloth</ThingName>
+<Desc>Cloth made from various materials to strengthen the Qi it contains.Clothes made will have [color=#ff7b00]Qi Barrier[/color] bonus. </Desc>
+<ElementKind>None</ElementKind>
+<Color>#62e0e3</Color>
+<Item Lable="Cloth">
+
+	<BeMaterial>
+	<ClothesColorID>13</ClothesColorID>
+	<StuffColorWeight>1</StuffColorWeight>
+			<RateWhenBeMain>10</RateWhenBeMain>
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>Elementless Qi</NamePrefix>
+
+			<ColorWhenBeMain>#62e0e3</ColorWhenBeMain>
+						<ColorWhenBeFloor>#62e0e3</ColorWhenBeFloor>
+									<ColorWhenBeCape>#2a7c7e</ColorWhenBeCape>
+	</BeMaterial>
+</Item>
+<Light>
+<Color>#62e0e3</Color>
+</Light>
+     <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTextileTable</Building>
+            <Count>40</Count>
+          </li>
+        </ProduceBuildings>
+		</ProduceMode>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_QiCloth_Violet" Parent="Item_QiCloth_Base">
+<ThingName>Violet Qi Cloth</ThingName>
+<Desc>Cloth made from various materials to strengthen the Qi it contains.Clothes made will have [color=#ff7b00]Qi Barrier[/color] bonus. </Desc>
+<ElementKind>None</ElementKind>
+<Color>#e464d7</Color>
+<Item Lable="Cloth">
+
+	<BeMaterial>
+			<RateWhenBeMain>10</RateWhenBeMain>
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>Elementless Qi</NamePrefix>
+			<ClothesColorID>2</ClothesColorID>
+			<ColorWhenBeMain>#e464d7</ColorWhenBeMain>
+			<ColorWhenBeFloor>#e464d7</ColorWhenBeFloor>
+			<ColorWhenBeCape>#e464d7</ColorWhenBeCape>
+	</BeMaterial>
+</Item>
+<Light>
+<Color>#e464d7</Color>
+</Light>
+     <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTextileTable</Building>
+            <Count>40</Count>
+          </li>
+        </ProduceBuildings>
+		  </ProduceMode>
+</ThingDef>
+
+<ThingDef Type="Item" Name="Item_QiCloth_Gold" Parent="Item_QiCloth_Base">
+<ThingName>Golden Qi Cloth</ThingName>
+<Desc>Cloth made from various materials to strengthen the Qi it contains.Clothes made will have [color=#ff7b00]Qi Barrier[/color] bonus. </Desc>
+<ElementKind>None</ElementKind>
+<Color>#fea515</Color>
+<Item Lable="Cloth">
+
+	<BeMaterial>
+			<RateWhenBeMain>10</RateWhenBeMain>
+			<CostMultiplier>1</CostMultiplier>
+			<NamePrefix>Elementless Qi</NamePrefix>
+			<ClothesColorID>10</ClothesColorID>
+			<ColorWhenBeMain>fea515</ColorWhenBeMain>
+			<ColorWhenBeFloor>fea515</ColorWhenBeFloor>
+<ColorWhenBeCape>#fea515</ColorWhenBeCape>
+	</BeMaterial>
+</Item>
+<Light>
+<Color>#fea515</Color>
+</Light>
+     <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTextileTable</Building>
+            <Count>40</Count>
+          </li>
+        </ProduceBuildings>
+		  </ProduceMode>
+</ThingDef>
+
+
+	<ThingDef Type="Item" Name="Item_GoldCloth" Parent="ClothBase">
+	
+	<ThingName>Golden Fabric</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfCloth</TexPath>
+	<Desc>Woven fabric of [golden] color made from cotton. Can be used to craft clothing and others.</Desc>
+	<Color>#fea515</Color>
+	<Item Lable="Cloth">
+		 <BeMaterial>
+			<NamePrefix>Golden Cloth</NamePrefix>
+			<ClothesColorID>10</ClothesColorID>
+			<ColorWhenBeMain>#fea515</ColorWhenBeMain>
+			<ColorWhenBeFloor>#fea515</ColorWhenBeFloor>
+			<ColorWhenBeCape>#fea515</ColorWhenBeCape>
+		</BeMaterial>
+	</Item>
+	     <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>TextileTable</Building>
+            <Count>20</Count>
+          </li>
+        </ProduceBuildings>
+		  </ProduceMode>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_GreenCloth" Parent="ClothBase">
+	<ThingName>Green Fabric</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfCloth</TexPath>
+	<Desc>Woven fabric of [green] color made from cotton. Can be used to craft clothing and others.</Desc>
+	<Color>#006400</Color>
+	<Item Lable="Cloth">
+		 <BeMaterial>
+			<NamePrefix>Green Cloth</NamePrefix>
+			<ClothesColorID>16</ClothesColorID>
+			<ColorWhenBeMain>#006400</ColorWhenBeMain>
+			<ColorWhenBeFloor>#006400</ColorWhenBeFloor>
+			<ColorWhenBeCape>#006400</ColorWhenBeCape>
+		</BeMaterial>
+	</Item>
+	     <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>TextileTable</Building>
+            <Count>20</Count>
+          </li>
+        </ProduceBuildings>
+		  </ProduceMode>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_LightGreenCloth" Parent="ClothBase">
+	<ThingName>Light Green Fabric</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfCloth</TexPath>
+	<Desc>Woven fabric of [green] color made from cotton. Can be used to craft clothing and others.</Desc>
+	<Color>#83c383</Color>
+	<Item Lable="Cloth">
+		 <BeMaterial>
+			<NamePrefix>Light Green Cloth</NamePrefix>
+			<ClothesColorID>17</ClothesColorID>
+			<ColorWhenBeMain>#83c383</ColorWhenBeMain>
+			<ColorWhenBeFloor>#83c383</ColorWhenBeFloor>
+			<ColorWhenBeCape>#83c383</ColorWhenBeCape>
+		</BeMaterial>
+	</Item>
+	     <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>TextileTable</Building>
+            <Count>20</Count>
+          </li>
+        </ProduceBuildings>
+		  </ProduceMode>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_BrownCloth" Parent="ClothBase">	
+	<ThingName>Brown Fabric</ThingName>
+	<TexPath>res\Sprs\object\object_ApieceOfCloth</TexPath>
+	<Desc>Woven fabric of [brown] color made from cotton. Can be used to craft clothing and others.</Desc>
+	<Color>#8b4513</Color>
+	<Item Lable="Cloth">
+		 <BeMaterial>
+			<NamePrefix>Brown Cloth</NamePrefix>
+			<ClothesColorID>18</ClothesColorID>
+			<ColorWhenBeMain>#8b4513</ColorWhenBeMain>
+			<ColorWhenBeFloor>#8b4513</ColorWhenBeFloor>
+			<ColorWhenBeCape>#8b4513</ColorWhenBeCape>
+		</BeMaterial>
+	</Item>
+	     <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>TextileTable</Building>
+            <Count>20</Count>
+          </li>
+        </ProduceBuildings>
+		  </ProduceMode>
+	</ThingDef>
+	
+</List></ThingDefs>

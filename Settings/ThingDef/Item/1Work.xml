@@ -1,0 +1,455 @@
+<ThingDefs>
+<List>
+
+<ThingDef Type="Item" Name="Allrounders Coat" Parent="CW_Cloth_Base">
+      <ThingName>Allrounders Coat</ThingName>
+      <Rate>1</Rate>
+      <Desc>For people that can do everything but nothing right. \n[color=#D06508]Slightly increases Farming, Mining \nMedicine, Social, Cooking, Artisanry \nWork efficency, Movespeed and Cleaningspeed[/color]</Desc>
+      <TexPath>res/Sprs/object/object_danyi01</TexPath>
+      <Color>336699</Color>
+      <OtherWorld>1</OtherWorld>
+      <Item Lable="Clothes" Kind="Equipment">
+        <Equip>
+		          <ModelID>5</ModelID>
+          <TemperatureMaxAdd>15</TemperatureMaxAdd>
+          <TemperatureMinAdd>-15</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Allrounder_Top</Modifier>
+		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>55</CostStuffCount>
+<Light>
+<Value>10</Value>
+<Failing>0.6</Failing>
+<FailRadius>1</FailRadius>
+<Radius>1</Radius>
+<Color>ffffffff</Color>
+</Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Allrounders Pants" Parent="CW_Cloth_Base">
+      <ThingName>Allrounders Pants</ThingName>
+      <Rate>1</Rate>
+     <Desc>For people that can do everything but nothing right. \n[color=#D06508]Slightly increases Farming, Mining \nMedicine, Social, Cooking, Artisanry \nWork efficency, Movespeed and Cleaningspeed[/color]</Desc>
+     <TexPath>res/Sprs/object/object_danku01</TexPath>
+      <Color>336699</Color>
+      <OtherWorld>1</OtherWorld>
+      <Item Lable="Trousers" Kind="Equipment">
+        <Equip>
+          <ModelID>5</ModelID>
+          <TemperatureMaxAdd>15</TemperatureMaxAdd>
+          <TemperatureMinAdd>-15</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Allrounder_Down</Modifier>
+		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>55</CostStuffCount>
+<Light>
+<Value>10</Value>
+<Failing>0.6</Failing>
+<FailRadius>1</FailRadius>
+<Radius>1</Radius>
+<Color>FFFFFFFF</Color>
+</Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+		    <ThingDef Type="Item" Name="Chef's Coat" Parent="CW_Cloth_Base">
+      <ThingName>Chef's Coat</ThingName>
+      <Rate>1</Rate>
+      <Desc>Chef Cook's Coat \n[color=#D06508]Increases Cooking /-speed and -sucessrate</Desc>
+      <TexPath>res/Sprs/object/object_danyi01</TexPath>
+      <Color>FFFFFFFF</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Clothes" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>150</WorkToMake>
+          <CostStuffCount>55</CostStuffCount>
+        </BeMade>
+        <Equip>
+          <ModelID>3</ModelID>
+          <TemperatureMaxAdd>15</TemperatureMaxAdd>
+          <TemperatureMinAdd>-15</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Cooking_Top</Modifier>
+		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>55</CostStuffCount>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Chef's Trousers" Parent="CW_Cloth_Base">
+      <ThingName>Chef's Trousers</ThingName>
+      <Rate>1</Rate>
+      <Desc>Chef Cooks Trousers \n[color=#D06508]Increases Cooking /-speed and -sucessrate</Desc>
+      <TexPath>res/Sprs/object/object_danku01</TexPath>
+      <Color>FFFFFFFF</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Trousers" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>150</WorkToMake>
+          <CostStuffCount>55</CostStuffCount>
+        </BeMade>
+        <Equip>
+          <ModelID>3</ModelID>
+          <TemperatureMaxAdd>15</TemperatureMaxAdd>
+          <TemperatureMinAdd>-15</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Cooking_Down</Modifier>
+		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>55</CostStuffCount>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+		    <ThingDef Type="Item" Name="Farmer's Coat" Parent="CW_Cloth_Base">
+      <ThingName>Farmer's Coat</ThingName>
+      <Rate>1</Rate>
+      <Desc>A Coat for Farming \n[color=#D06508]Increases Farming/-speed</Desc>
+      <TexPath>res/Sprs/object/object_mianyi01</TexPath>
+      <Color>00cc33</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Clothes" Kind="Equipment">
+        <Equip>
+          <ModelID>4</ModelID>
+          <TemperatureMaxAdd>15</TemperatureMaxAdd>
+          <TemperatureMinAdd>-15</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Farming_Top</Modifier>
+		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>55</CostStuffCount>
+      <Light>
+        <Color>00cc33</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Farmer's Pants" Parent="CW_Cloth_Base">
+      <ThingName>Farmer's Pants</ThingName>
+      <Rate>1</Rate>
+      <Desc>Pants for Farming \n[color=#D06508]Increases Farming/-speed</Desc>
+      <TexPath>res/Sprs/object/object_mianku01</TexPath>
+      <Color>00cc33</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Trousers" Kind="Equipment">
+        <Equip>
+          <ModelID>4</ModelID>
+          <TemperatureMaxAdd>15</TemperatureMaxAdd>
+          <TemperatureMinAdd>-15</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Farming_Down</Modifier>
+		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>55</CostStuffCount>
+      <Light>
+        <Color>00cc33</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Handicraft Coat" Parent="CW_Cloth_Base">
+      <ThingName>Handicraft Coat</ThingName>
+      <Rate>1</Rate>
+      <Desc>A Coat for people who like to work with their hands. \n[color=#D06508]Increases Crafting, Construction and Artisanry \nas well as Crafting speed and Quality</Desc>
+      <TexPath>res/Sprs/object/object_danyi01</TexPath>
+      <Color>FFFFFFFF</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Clothes" Kind="Equipment">
+        <Equip>
+          <ModelID>1</ModelID>
+          <TemperatureMaxAdd>15</TemperatureMaxAdd>
+          <TemperatureMinAdd>-15</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Crafting_Top</Modifier>
+		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>55</CostStuffCount>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Handicraft Pants" Parent="CW_Cloth_Base">
+      <ThingName>Handicraft Pants</ThingName> 
+      <Rate>1</Rate>
+      <Desc>Pants for people who like to work with their hands. \n[color=#D06508]Increases Crafting, Construction and Artisanry \nas well as Crafting speed and Quality</Desc>
+      <TexPath>res/Sprs/object/object_danku01</TexPath>
+      <Color>FFFFFFFF</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Trousers" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>150</WorkToMake>
+          <CostStuffCount>55</CostStuffCount>
+          <StuffCategories>
+            <Stuff name="Cloth" />
+            <Stuff name="Leather" />
+          </StuffCategories>
+        </BeMade>
+        <Equip>
+          <ModelID>1</ModelID>
+          <TemperatureMaxAdd>15</TemperatureMaxAdd>
+          <TemperatureMinAdd>-15</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Crafting_Down</Modifier>
+		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>55</CostStuffCount>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+		    <ThingDef Type="Item" Name="Miner's Jacket" Parent="CW_Cloth_Base">
+      <ThingName>Miner's Jacket</ThingName>
+      <Rate>1</Rate>
+      <Desc>A Jacket for Professional Miners \n[color=#D06508]Increases Mining/-speed and Yield</Desc>
+      <TexPath>res/Sprs/object/object_mianyi01</TexPath>
+      <Color>99ffff</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Clothes" Kind="Equipment">
+        <Equip>
+          <ModelID>2</ModelID>
+          <TemperatureMaxAdd>15</TemperatureMaxAdd>
+          <TemperatureMinAdd>-15</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Mining_Top</Modifier>
+		  		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>55</CostStuffCount>
+      <Light>
+        <Color>99ffff</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Miners Pants" Parent="CW_Cloth_Base">
+      <ThingName>Miners Pants</ThingName>
+      <Rate>1</Rate>
+      <Desc>Pants for Professional Miners \n[color=#D06508]Increases Mining/-speed and Yield</Desc>
+      <TexPath>res/Sprs/object/object_mianku01</TexPath>
+      <Color>99ffff</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Trousers" Kind="Equipment">
+        <Equip>
+          <ModelID>2</ModelID>
+          <TemperatureMaxAdd>15</TemperatureMaxAdd>
+          <TemperatureMinAdd>-15</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Mining_Down</Modifier>
+		  		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>55</CostStuffCount>
+      <Light>
+        <Color>99ffff</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Peons Coat" Parent="CW_Cloth_Base">
+      <ThingName>Peons Coat</ThingName>
+      <Rate>1</Rate>
+      <Desc>Clothes for work nobody wants to do. \n[color=#D06508]Increase Social, Cleaning and Movement speed.</Desc>
+      <TexPath>res/Sprs/object/object_danyi01</TexPath>
+      <Color>FFFFFFFF</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Clothes" Kind="Equipment">
+        <Equip>
+          <ModelID>3</ModelID>
+          <TemperatureMaxAdd>15</TemperatureMaxAdd>
+          <TemperatureMinAdd>-15</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Peon_Top</Modifier>
+		  		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>55</CostStuffCount>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Peons Pants" Parent="CW_Cloth_Base">
+      <ThingName>Peons Pants</ThingName>
+      <Rate>1</Rate>
+      <Desc>Clothes for work nobody wants to do. \n[color=#D06508]Increase Social, Cleaning and Movement speed.</Desc>
+      <TexPath>res/Sprs/object/object_danku01</TexPath>
+      <Color>FFFFFFFF</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Trousers" Kind="Equipment">
+        <Equip>
+          <ModelID>3</ModelID>
+          <TemperatureMaxAdd>15</TemperatureMaxAdd>
+          <TemperatureMinAdd>-15</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Peon_Down</Modifier>
+		  		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>55</CostStuffCount>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Pharmacists Coat" Parent="CW_Cloth_Base">
+      <ThingName>Pharmacists Coat</ThingName>
+      <Rate>1</Rate>
+      <Desc>Clothing of the Pharmacist. \n[color=#D06508]Increases Medicine and Social as well as providing faster and more efficent healing</Desc>
+      <TexPath>res/Sprs/object/object_danyi01</TexPath>
+      <Color>ffff66</Color>
+      <OtherWorld>1</OtherWorld>
+      <Item Lable="Clothes" Kind="Equipment">
+        <Equip>
+          <ModelID>4</ModelID>
+          <TemperatureMaxAdd>15</TemperatureMaxAdd>
+          <TemperatureMinAdd>-15</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+		 <Modifier>Doctor_Top</Modifier>
+		 		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>1</CostStuffCount>
+      <Light>
+        <Color>ffff66</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Pharmacists Pants" Parent="CW_Cloth_Base">
+      <ThingName>Pharmacists Pants</ThingName>
+      <Rate>1</Rate>
+      <Desc>Clothing of the Pharmacist. \n[color=#D06508]Increases Medicine and Social as well as providing faster and more efficent healing</Desc>
+      <TexPath>res/Sprs/object/object_danku01</TexPath>
+      <Color>ffff33</Color>
+      <OtherWorld>1</OtherWorld>
+      <Item Lable="Trousers" Kind="Equipment">
+        <Equip>
+          <ModelID>4</ModelID>
+          <TemperatureMaxAdd>15</TemperatureMaxAdd>
+          <TemperatureMinAdd>-15</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Doctor_Down</Modifier>
+		  		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>55</CostStuffCount>
+      <Light>
+        <Color>ffff33</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+</List>
+</ThingDefs>

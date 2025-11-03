@@ -1,0 +1,301 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="CWItem_CapeBase" Parent="EquipmentBase">	
+		<TexPath>res\Sprs\object_xiongmaoDLC\object_GaoJiPiFeng01</TexPath>	
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Beauty>9</Beauty>
+		<Rate>6</Rate>
+		<ElementKind>Mu</ElementKind>	
+		<IllustratedHandLabel>Equip</IllustratedHandLabel>
+		<Item Lable="Cape">			
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<FabaoSuffix>Cape</FabaoSuffix>
+			<Prices>
+				<TalkType>3</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="2500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+			<NotRandom>1</NotRandom>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Soft2</li>
+			</PhysicalLables>
+			<Equip>
+						          <TemperatureMaxAdd>50</TemperatureMaxAdd>
+					  <TemperatureMinAdd>-10</TemperatureMinAdd>
+		<!--<CapeData>
+				<Mat>CapeMat/Cape2</Mat> <!{1}**Specify shader, can be empty**{1}>		
+				<MainTexture></MainTexture><!{1}**Main texture**{1}>				
+				<MaskTexture></MaskTexture><!{1}**Channel texture Yes no If yes, the three channels of RGB have a color cast**{1}>				
+				<ColorR></ColorR><!{1}**R channel color**{1}>
+				<ColorG></ColorG><!{1}**G channel color**{1}>
+				<ColorB></ColorB><!{1}**B channel color**{1}>
+				
+				<FlowTexture></FlowTexture><!{1}**Flow effect texture Yes no**{1}>
+				<FlowColor></FlowColor><!{1}**Flow effect texture Color cast**{1}>
+				<FlowMoveX></FlowMoveX><!{1}**Flow effect texture X scroll speed**{1}>
+				<FlowMoveY></FlowMoveY><!{1}**Flow effect: Y scrolling speed**{1}>
+				<FlowRot></FlowRot><!{1}**Rotation speed of flow effect map**{1}>
+			</CapeData>-->
+			</Equip>
+		<HorseData>
+		</HorseData>
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0.05</Attenuation>
+			<Absorption>0.6</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="CWItem_Cape_Fire" Parent="CWItem_CapeBase">	
+		<ThingName>Phoenix Cape</ThingName>
+		<Desc>Cape made from [color=#ff0000]Fire[/color] Qi infused Fabric.\n[color=#D06508]Raises Movement &amp; Travel Speed\nIncreases Barrier\nIncreases Artifact Power\nGrants Elemental defense[/color]</Desc>
+      <Color>#ff0000</Color>
+	  	<KeepModelColor>0</KeepModelColor>
+	  <ElementKind>Huo</ElementKind>
+		<Item Lable="Cape">	
+		<BeMade>
+			<WorkToMake>600</WorkToMake>
+			<CostItems>
+		     <Item name="Item_WhiteCloth" count="400" />
+			 <Item name="Item_QiCloth_Fire" count="200" />
+			 <Item name="Item_LingWood" count="5" />
+			 <Item name="Item_LingStone" count="200" />
+          </CostItems>
+		  </BeMade>
+			<Equip>
+			 <Modifier>Fire_Cape</Modifier>
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng002</Mat>
+
+					<FlowTexture>0</FlowTexture><!--Flow effect texture Yes no-->
+				</CapeData>
+			</Equip>
+		</Item>	
+		      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+	</ThingDef>
+	
+		<ThingDef Type="Item" Name="CWItem_Cape_Water" Parent="CWItem_CapeBase">	
+		<ThingName>Waterdragon Cape</ThingName>
+		<Desc>Cape made from [color=#0b3cbf]Water[/color] Qi infused Fabric.\n[color=#D06508]Raises Movement &amp; Travel Speed\nIncreases Barrier\nIncreases Artifact Power\nGrants Elemental defense[/color]</Desc>
+      <Color>#4f69b1</Color>
+	  	<KeepModelColor>0</KeepModelColor>
+	  <ElementKind>Shui</ElementKind>
+		<Item Lable="Cape">	
+		<BeMade>
+			<WorkToMake>600</WorkToMake>
+			<CostItems>
+		     <Item name="Item_WhiteCloth" count="400" />
+		    <Item name="Item_QiCloth_Water" count="200" />
+			 <Item name="Item_LingWood" count="5" />
+			 <Item name="Item_LingStone" count="200" />
+          </CostItems>
+		  </BeMade>
+		  <Equip>
+			<Modifier>Water_Cape</Modifier>
+
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng007</Mat>
+
+					<FlowTexture>0</FlowTexture><!--Flow effect texture Yes no-->
+				</CapeData>
+			</Equip>
+		</Item>	
+		      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+	</ThingDef>
+	
+		<ThingDef Type="Item" Name="CWItem_Cape_Earth" Parent="CWItem_CapeBase">	
+		<ThingName>Xuán Wǔ Cape</ThingName>
+		<Desc>Cape made from [color=#7e5945]Earth[/color] Qi infused Fabric.\n[color=#D06508]Raises Movement &amp; Travel Speed\nIncreases Barrier\nIncreases Artifact Power\nGrants Elemental defense[/color]</Desc>
+      <Color>#7e5945</Color>
+	  	<KeepModelColor>0</KeepModelColor>
+	  <ElementKind>Tu</ElementKind>
+		<Item Lable="Cape">	
+		<BeMade>
+			<WorkToMake>600</WorkToMake>
+			<CostItems>
+		     <Item name="Item_WhiteCloth" count="400" />
+		    <Item name="Item_QiCloth_Earth" count="200" />
+			 <Item name="Item_LingWood" count="5" />
+			 <Item name="Item_LingStone" count="200" />
+          </CostItems>
+		  </BeMade>
+			<Equip>
+			<Modifier>Earth_Cape</Modifier>
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng010</Mat>
+
+					<FlowTexture>0</FlowTexture><!--Flow effect texture Yes no-->
+				</CapeData>
+			</Equip>
+		</Item>	
+		      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+	</ThingDef>
+	
+		<ThingDef Type="Item" Name="CWItem_Cape_Wood" Parent="CWItem_CapeBase">	
+		<ThingName>Gaia Cape</ThingName>
+		<Desc>Cape made from [color=#49b675]Wood[/color] Qi infused Fabric.\n[color=#D06508]Raises Movement &amp; Travel Speed\nIncreases Barrier\nIncreases Artifact Power\nGrants Elemental defense[/color]</Desc>
+      <Color>#49b675</Color>
+	  	<KeepModelColor>0</KeepModelColor>
+	  <ElementKind>Mu</ElementKind>
+		<Item Lable="Cape">	
+		<BeMade>
+			<WorkToMake>600</WorkToMake>
+			<CostItems>
+		     <Item name="Item_WhiteCloth" count="400" />
+		    <Item name="Item_QiCloth_Wood" count="200" />
+			 <Item name="Item_LingWood" count="5" />
+			 <Item name="Item_LingStone" count="200" />
+          </CostItems>
+		  </BeMade>
+		  <Equip>
+		  <Modifier>Wood_Cape</Modifier>
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng003</Mat>
+
+					<FlowTexture>0</FlowTexture><!--Flow effect texture Yes no-->
+				</CapeData>
+			</Equip>
+		</Item>	
+		      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+	</ThingDef>
+	
+		<ThingDef Type="Item" Name="CWItem_Cape_Metal" Parent="CWItem_CapeBase">	
+		<ThingName>White Tiger Cape</ThingName>
+		<Desc>Cape made from [color=#fffd00]Metal[/color] Qi infused Fabric.\n[color=#D06508]Raises Movement &amp; Travel Speed\nIncreases Barrier\nIncreases Artifact Power\nGrants Elemental defense[/color]</Desc>
+      <Color>#fffd00</Color>
+	  	<KeepModelColor>0</KeepModelColor>
+	  <ElementKind>Jin</ElementKind>
+		<Item Lable="Cape">	
+		<BeMade>
+			<WorkToMake>600</WorkToMake>
+			<CostItems>
+		     <Item name="Item_WhiteCloth" count="400" />
+		    <Item name="Item_QiCloth_Metal" count="200" />
+			 <Item name="Item_LingWood" count="5" />
+			 <Item name="Item_LingStone" count="200" />
+          </CostItems>
+		  </BeMade>
+		<Equip>
+		 <Modifier>Metal_Cape</Modifier>
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng006</Mat>
+
+					<FlowTexture>0</FlowTexture><!--Flow effect texture Yes no-->
+				</CapeData>
+			</Equip>
+		</Item>	
+		      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+	</ThingDef>
+	
+		<ThingDef Type="Item" Name="CWItem_Cape_All" Parent="CWItem_CapeBase">	
+		<ThingName>Void Cape</ThingName>
+		<Desc>With a divine Sewing Art crafting Masters were able to fuse all Elemental Capes into one mighty Cape.\n[color=#D06508]Raises Movement &amp; Travel Speed\nIncreases Barrier\nIncreases Artifact Power\nGrants all Elemental defense[/color]</Desc>
+      <Color>#ff00f9</Color>
+	  <Rate>8</Rate>
+	  	<KeepModelColor>0</KeepModelColor>
+	  <ElementKind>None</ElementKind>
+		<Item Lable="Cape">	
+			<Prices>
+				<TalkType>3</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="5500" />
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+		<BeMade>
+			<WorkToMake>600</WorkToMake>
+			<CostItems>
+		     <Item name="Item_WhiteCloth" count="400" />
+		     <Item name="Item_QiCloth_None" count="200" />
+			 <Item name="CWItem_Cape_Fire" count="1" />
+			 <Item name="CWItem_Cape_Water" count="1" />
+			 <Item name="CWItem_Cape_Earth" count="1" />
+			 <Item name="CWItem_Cape_Metal" count="1" />
+			 <Item name="CWItem_Cape_Wood" count="1" />
+			 <Item name="Item_LingStone" count="500" />
+          </CostItems>
+		  </BeMade>
+			<Equip>
+			<TemperatureMaxAdd>100</TemperatureMaxAdd>
+					  <TemperatureMinAdd>-25</TemperatureMinAdd>
+			  <Modifier>Elementless_Cape</Modifier>
+				<CapeData>
+					<Mat>CapeMat/CapeBase_pifeng008</Mat>
+
+					<FlowTexture>0</FlowTexture><!--Flow effect texture Yes no-->
+				</CapeData>
+			</Equip>
+		</Item>	
+		      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+	</ThingDef>
+</List>	
+	</ThingDefs>

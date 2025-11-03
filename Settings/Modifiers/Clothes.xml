@@ -1,0 +1,325 @@
+﻿<ModifierDefs>
+  <List>
+    <Modifier Name="Allrounder_Top">
+      <DisplayName>Allrounder</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <FromModifier>7bf97dbd-537a-49d5-8885-8409bf4830cb</FromModifier>
+      <Skills>
+        <li Name="Farming" Level="0" LevelOver="2" Type="2" />
+        <li Name="Medicine" Level="0" LevelOver="2" Type="2" />
+        <li Name="Mining" Level="0" LevelOver="2" Type="2" />
+        <li Name="SocialContact" Level="0" LevelOver="2" Type="2" />
+        <li Name="Cooking" Level="0" LevelOver="2" Type="2" />
+        <li Name="Art" Level="0" LevelOver="2" Type="2" />
+        <li Name="Manual" Level="0" LevelOver="2" Type="2" />
+      </Skills>
+      <Properties>
+        <li Name="GlobalEfficiency" AddP="0.15" AddV="0" BAddP="0" BAddV="0" Type="2" />
+		<li Name="CleanSpeed" AddP="0.25" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="MoveSpeed" AddP="0.2" AddV="0" BAddP="0" BAddV="0" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+		 <Modifier Name="Allrounder_Down" Parent="Allrounder_Top">
+	 <DisplayName>Allrounder_Down</DisplayName>
+	</Modifier>
+	
+	    <Modifier Name="Artifact_Top">
+      <DisplayName>Artifact</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <FromModifier>d1748906-4517-412f-81bc-ce28502623cc</FromModifier>
+      <Skills>
+       <li Name="Art" Level="0" LevelOver="3" Type="2" />
+        <li Name="Fabao" Level="0" LevelOver="3" Type="2" />
+		  <li Name="DanQi" Level="2" LevelOver="3" Type="2" />
+      </Skills>
+      <Properties>
+        <li Name="FabaoMake_LingInheritRateAddV" AddP="0.17" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="FabaoMake_QualityAddV" AddP="0" AddV="0" BAddP="0" BAddV="0.07" Type="2" />
+        <li Name="FabaoMake_TwelveRateChance" AddP="0" AddV="0" BAddP="0" BAddV="0.07" Type="2" />
+        <li Name="FabaoMake_SpeedAddV" AddP="0.17" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="FabaoMake_SuccessRateAddV" AddP="0" AddV="0" BAddP="0" BAddV="0.1" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+		 <Modifier Name="Artifact_Down" Parent="Artifact_Top">
+	 <DisplayName>Artifact_Down</DisplayName>
+	</Modifier>
+	
+	    <Modifier Name="Body_Cult_Top">
+      <DisplayName>Body Cult</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <FromModifier>9440fb09-4995-4761-8fa7-5e8859824e50</FromModifier>
+      <Skills>
+        <li Name="Fight" Level="3" LevelOver="0" Type="1" />
+        <li Name="Qi" Level="3" LevelOver="0" Type="1" />
+      </Skills>
+      <Properties>
+        <li Name="BodyPratice_BodyStrong" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="BodyPratice_SuperPartCostAddP" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="BodyPratice_SuperPartRecoverAddP" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="BodyPractice_SuperPartAddp_AtkPower" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="BodyPractice_SuperPartAddp_DefPower" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="BodyPractice_SuperPartAddp_AtkRate" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="BodyPractice_SuperPartAddp_DefRate" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="BodyPractice_SuperPartAddp_CatchFabao" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="BodyPractice_SuperPartAddv_AtkPower" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="BodyPractice_SuperPartAddv_DefPower" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="BodyPractice_SuperPartAddv_AtkRate" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="BodyPractice_SuperPartAddv_DefRate" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="BodyPractice_SuperPartAddv_CatchFabao" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="BodyPractice_SuperPartAddv_CatchFabao" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+			 <Modifier Name="Body_Cult_Down" Parent="Body_Cult_Top">
+	 <DisplayName>Body_Cult_Down</DisplayName>
+	</Modifier>	
+	
+	    <Modifier Name="Cooking_Top">
+      <DisplayName>Cooking</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <FromModifier>366cedb5-3fae-447a-9c6d-17c445fa85d2</FromModifier>
+      <Skills>
+        <li Name="Cooking" Level="5" LevelOver="0" Type="1" />
+      </Skills>
+      <Properties>
+        <li Name="CookingSpeed" AddP="0" AddV="2" BAddP="0" BAddV="0" Type="1" />
+        <li Name="CookingSuccessChance" AddP="0" AddV="2" BAddP="0" BAddV="0" Type="1" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	<Modifier Name="Cooking_Down" Parent="Cooking_Top">
+	 <DisplayName>Cooking_Down</DisplayName>
+	</Modifier>	
+	
+	    <Modifier Name="Crafting_Top">
+      <DisplayName>Crafting</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <FromModifier>7a1baf91-58bc-434b-95f1-b6ea91587e8f</FromModifier>
+      <Skills>
+        <li Name="Art" Level="0" LevelOver="4" Type="2" />
+        <li Name="Manual" Level="0" LevelOver="4" Type="2" />
+        <li Name="Building" Level="0" LevelOver="4" Type="2" />
+      </Skills>
+      <Properties>
+        <li Name="HandworkSpeed" AddP="0" AddV="2" BAddP="0" BAddV="0" Type="1" />
+        <li Name="MadeQualityAddValue" AddP="0" AddV="2" BAddP="0" BAddV="0" Type="1" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+		
+	<Modifier Name="Crafting_Down" Parent="Crafting_Top">
+	 <DisplayName>Crafting_Down</DisplayName>
+	</Modifier>		
+	
+	    <Modifier Name="Dan_Top">
+      <DisplayName>Dan Coat</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <FromModifier>fafc409e-7d53-47e1-8bfc-923bb2e1adb9</FromModifier>
+      <Skills>
+        <li Name="Medicine" Level="0" LevelOver="3" Type="2" />
+        <li Name="DanQi" Level="2" LevelOver="3" Type="2" />
+		       <li Name="Art" Level="0" LevelOver="2" Type="2" />
+      </Skills>
+      <Properties>
+        <li Name="DanMake_SpeedAddV" AddP="0.5" AddV="0" BAddP="0" BAddV="0.1" Type="2" />
+        <li Name="DanMake_SuccessRate" AddP="0.1" AddV="0" BAddP="0" BAddV="0.1" Type="2" />
+        <li Name="DanMake_SuccessRateAddV" AddP="0.1" AddV="0" BAddP="0" BAddV="0.1" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	<Modifier Name="Dan_Down" Parent="Dan_Top">
+	 <DisplayName>Dan_Down</DisplayName>
+	</Modifier>		
+	
+	    <Modifier Name="Doctor_Top">
+      <DisplayName>Doctor</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <FromModifier>113d46f5-e2dd-4f32-9199-295e76b68b61</FromModifier>
+      <Skills>
+        <li Name="Medicine" Level="0" LevelOver="4" Type="2" />
+        <li Name="SocialContact" Level="0" LevelOver="1" Type="2" />
+      </Skills>
+      <Properties>
+        <li Name="TreatSpeed" AddP="0.18" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="TreatSuccessChance" AddP="0.2" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="TreatmentExpectQuality" AddP="0.2" AddV="0" BAddP="0" BAddV="0" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	<Modifier Name="Doctor_Down" Parent="Doctor_Top">
+	 <DisplayName>Doctor_Down</DisplayName>
+	</Modifier>		
+	
+	  <Modifier Name="Farming_Top">
+      <DisplayName>Farming</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <FromModifier>e4324558-10bf-49de-828c-a73ea9d60c72</FromModifier>
+      <Skills>
+        <li Name="Farming" Level="0" LevelOver="6" Type="2" />
+      </Skills>
+      <Properties>
+        <li Name="PlantWorkSpeed" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	<Modifier Name="Farming_Down" Parent="Farming_Top">
+	 <DisplayName>Farming_Down</DisplayName>
+	</Modifier>			
+	
+	    <Modifier Name="Immortal_Top">
+      <DisplayName>Immortal</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>1,1,1,1,1</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <FromModifier>105d29dd-a0ff-455c-918a-94c79e3cca09</FromModifier>
+      <Skills>
+        <li Name="Fight" Level="0" LevelOver="5" Type="2" />
+        <li Name="Qi" Level="0" LevelOver="5" Type="2" />
+        <li Name="Fabao" Level="0" LevelOver="5" Type="2" />
+        <li Name="FightSkill" Level="0" LevelOver="5" Type="2" />
+        <li Name="Barrier" Level="0" LevelOver="5" Type="2" />
+        <li Name="Zhen" Level="0" LevelOver="5" Type="2" />
+        <li Name="Qi" Level="5" LevelOver="0" Type="1" />
+      </Skills>
+      <Properties>
+        <li Name="NutritionWaterAutoRecover" AddP="0.5" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="NpcLingMaxValue" AddP="0.75" AddV="0" BAddP="0" BAddV="0.75" Type="2" />
+        <li Name="NpcFight_FabaoMaxLingAddP" AddP="0.5" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="IntelligenceSkillEXPConstant" AddP="0.25" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.5" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="NpcFight_FabaoNum" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+		<li Name="MindStateBaseValue" AddP="0" AddV="0" BAddP="0" BAddV="6" Type="1" />
+        <li Name="SpeedOfMindStateCoefficient" AddP="0.2" AddV="0" BAddP="0" BAddV="0" Type="2" />
+		<li Name="LingAbsorbSpeed" AddP="0.3" AddV="0" BAddP="0" BAddV="0" Type="1" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	 <Modifier Name="Immortal_Down" Parent="Immortal_Top">
+	 <DisplayName>Immortal_Down</DisplayName>
+	</Modifier>	
+	
+	    <Modifier Name="Inner_Top">
+      <DisplayName>Inner D</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <FromModifier>7d44d779-8e7f-4a71-b2c4-40e51532c260</FromModifier>
+      <Skills>
+        <li Name="Qi" Level="0" LevelOver="3" Type="2" />
+        <li Name="Fight" Level="0" LevelOver="3" Type="2" />
+      </Skills>
+      <Properties>
+		<li Name="GongMatch_ShuiAddV" AddV="0.1" AddP="0" BAddV="0" Type="2" />
+		<li Name="GongMatch_NoneAddV" AddV="0.1" AddP="0" BAddV="0" Type="2" />
+        <li Name="NutritionWaterAutoRecover" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+		<li Name="LingAbsorbSpeed" AddP="0.2" AddV="0" BAddP="0" BAddV="0" Type="1" />
+        <li Name="NpcLingMaxValue" AddP="0.25" AddV="0" BAddP="0" BAddV="0.25" Type="2" />
+        <li Name="NpcFight_FabaoMaxLingAddP" AddP="0.01" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.25" AddV="0" BAddP="0" BAddV="0" Type="2" />
+		<li Name="MindStateBaseValue" AddP="0" AddV="0" BAddP="0" BAddV="4" Type="1" />
+        <li Name="SpeedOfMindStateCoefficient" AddP="0.1" AddV="0" BAddP="0" BAddV="0" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	 <Modifier Name="Inner_Down" Parent="Inner_Top">
+	 <DisplayName>Inner_Down</DisplayName>
+	</Modifier>		
+	
+	    <Modifier Name="Mining_Top">
+      <DisplayName>Mining</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <FromModifier>455c8dfa-73da-4ab6-b807-280f89d3e130</FromModifier>
+      <Skills>
+        <li Name="Mining" Level="0" LevelOver="6" Type="2" />
+      </Skills>
+      <Properties>
+        <li Name="MiningSpeed" AddP="0" AddV="2" BAddP="0" BAddV="0" Type="1" />
+        <li Name="MiningYieldEfficiency" AddP="0" AddV="1" BAddP="0" BAddV="0" Type="1" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>
+	
+	 <Modifier Name="Mining_Down" Parent="Mining_Top">
+	 <DisplayName>Mining_Down</DisplayName>
+	</Modifier>		
+	
+	    <Modifier Name="Peon_Top">
+      <DisplayName>Peon</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <BaseFive>0,0,0,0,0</BaseFive>
+      <OtherWorld>1</OtherWorld>
+      <Sync>1</Sync>
+      <FromModifier>df26e389-d009-44d5-a65b-3b3be0d2a807</FromModifier>
+      <Skills>
+        <li Name="SocialContact" Level="0" LevelOver="2" Type="2" />
+      </Skills>
+      <Properties>
+        <li Name="CleanSpeed" AddP="0.6" AddV="0" BAddP="0" BAddV="0" Type="2" />
+        <li Name="MoveSpeed" AddP="0.4" AddV="0" BAddP="0" BAddV="0" Type="2" />
+      </Properties>
+      <CustItemType>OtherEquip</CustItemType>
+    </Modifier>	
+	
+	 <Modifier Name="Peon_Down" Parent="Peon_Top">
+	 <DisplayName>Peon_Down</DisplayName>
+	</Modifier>		
+	
+	
+	
+	
+  </List>
+</ModifierDefs>

@@ -1,0 +1,232 @@
+<ThingDefs>
+  <List>
+    <ThingDef Type="Item" Name="Toolbox_Miner" Parent="WanJie_OtherEquipBase">
+      <ThingName>Miners Toolbox</ThingName>
+      <Rate>1</Rate>
+      <Desc>A box with tools for mole's.\n[color=#D06508]Increases Mining/-speed and -yield.</Desc>
+      <TexPath>res/Sprs/object/object_MediumToolbox</TexPath>
+      <Color>663333</Color>
+      <OtherWorld>1</OtherWorld>
+      <Item Lable="Tool" Kind="Equipment">
+        <BeMade>
+          <CostStuffCount>15</CostStuffCount>
+          <CostItems>
+            <Item name="Item_SysPickaxe" count="1" />
+            <Item name="Item_IronBlock" count="10" />
+            <Item name="Item_LingStone" count="25" />
+          </CostItems>
+          <StuffCategories>
+            <Stuff name="WoodBlock" />
+          </StuffCategories>
+        </BeMade>
+        <Equip>
+          <Modifier>MinerT</Modifier>
+        </Equip>
+      </Item>
+      <CostStuffCount>15</CostStuffCount>
+      <Light>
+        <Color>663333</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>WeaponMaker</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Toolbox_Crafter" Parent="WanJie_OtherEquipBase">
+      <ThingName>Crafter's Toolbox.</ThingName>
+      <Rate>1</Rate>
+      <Desc>A box with Tools.\n[color=#D06508]Increases Crafting/-speed &amp; Quality.</Desc>
+      <TexPath>res/Sprs/object/object_PrimaryToolbox</TexPath>
+      <Color>ffffff</Color>
+      <OtherWorld>1</OtherWorld>
+      <Item Kind="Equipment">
+        <BeMade>
+          <CostStuffCount>15</CostStuffCount>
+          <CostItems>
+            <Item name="Item_LingStone" count="50" />
+            <Item name="Item_LingWood" count="5" />
+            <Item name="Item_IronBlock" count="10" />
+          </CostItems>
+          <StuffCategories>
+            <Stuff name="WoodBlock" />
+          </StuffCategories>
+        </BeMade>
+        <Equip>
+          <Modifier>CrafterT</Modifier>
+        </Equip>
+      </Item>
+      <CostStuffCount>15</CostStuffCount>
+      <Light>
+        <Color>ffffff</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>WeaponMaker</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Toolbox_Farmer" Parent="WanJie_OtherEquipBase">
+      <ThingName>Farmer's Toolbox.</ThingName>
+      <Rate>1</Rate>
+      <Desc>A box with Tools.\n[color=#D06508]Increases Farming/-speed &amp; -yield.</Desc>
+      <TexPath>res/Sprs/object/object_PrimaryToolbox</TexPath>
+      <Color>66ff00</Color>
+      <OtherWorld>1</OtherWorld>
+      <Item Kind="Equipment">
+        <BeMade>
+          <CostStuffCount>15</CostStuffCount>
+          <CostItems>
+            <Item name="Item_SysSickle" count="1" />
+            <Item name="Item_IronBlock" count="10" />
+            <Item name="Item_LingStone" count="50" />
+          </CostItems>
+          <StuffCategories>
+            <Stuff name="WoodBlock" />
+          </StuffCategories>
+        </BeMade>
+        <Equip>
+          <Modifier>FarmerT</Modifier>
+        </Equip>
+      </Item>
+      <CostStuffCount>15</CostStuffCount>
+      <Light>
+        <Color>66ff00</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>WeaponMaker</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Toolbox_Chef" Parent="WanJie_OtherEquipBase">
+      <ThingName>Chef's Toolbox.</ThingName>
+      <Rate>1</Rate>
+      <Desc>A box with Tools.\n[color=#D06508]Increases Cooking/-speed &amp; success.</Desc>
+      <TexPath>res/Sprs/object/object_PrimaryToolbox</TexPath>
+      <Color>ffff00</Color>
+      <OtherWorld>1</OtherWorld>
+      <Item Kind="Equipment">
+        <BeMade>
+          <CostStuffCount>15</CostStuffCount>
+          <CostItems>
+            <Item name="Item_Wheat" count="20" />
+            <Item name="Item_Pear" count="50" />
+            <Item name="Item_Ginkgo" count="85" />
+            <Item name="Item_IronBlock" count="10" />
+          </CostItems>
+          <StuffCategories>
+            <Stuff name="WoodBlock" />
+          </StuffCategories>
+        </BeMade>
+        <Equip>
+          <Modifier>ChefT</Modifier>
+        </Equip>
+      </Item>
+      <CostStuffCount>15</CostStuffCount>
+      <Light>
+        <Color>ffff00</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>WeaponMaker</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+		    <ThingDef Type="Item" Name="Toolbox_Medicine" Parent="WanJie_OtherEquipBase">
+      <ThingName>Medicine Toolbox.</ThingName>
+      <Rate>1</Rate>
+      <Desc>Needles for Doctor's.\n[color=#D06508]Increases Healingabilities.</Desc>
+      <TexPath>res/Sprs/object/object_zhenjiu01</TexPath>
+      <Color>cc0000</Color>
+      <OtherWorld>1</OtherWorld>
+      <Item Kind="Equipment">
+        <BeMade>
+          <CostStuffCount>15</CostStuffCount>
+          <CostItems>
+            <Item name="Item_Dan_WuLingSan" count="1" />
+            <Item name="Item_SmallCycle" count="1" />
+            <Item name="Item_LingWood" count="2" />
+            <Item name="Item_IronBlock" count="10" />
+          </CostItems>
+          <StuffCategories>
+            <Stuff name="WoodBlock" />
+          </StuffCategories>
+        </BeMade>
+        <Equip>
+          <Modifier>MedicineT</Modifier>
+        </Equip>
+      </Item>
+      <CostStuffCount>15</CostStuffCount>
+      <Light>
+        <Color>cc0000</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>WeaponMaker</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+			<ThingDef Type="Item" Name="Item_ProtectCharm" Parent="MiBaoBase">
+	<ThingName>Protective Sphere</ThingName>
+	<TexPath>res\Sprs\object_zhengfatianxia\object_PTzhu01</TexPath>	
+	<FabaoTexPath>res\Sprs\object_zhengfatianxia\object_MBzhu01</FabaoTexPath>
+	<Desc>Can save your life once.</Desc>
+	<ElementKind>Tu</ElementKind>
+	<Item Kind="Equipment">
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_SoulPearl" count = "1"/>
+				<Item name = "Item_JinEssence" count = "5"/>
+				<Item name = "Item_MuEssence" count = "5"/>
+				<Item name = "Item_ShuiEssence" count = "5"/>
+				<Item name = "Item_HuoEssence" count = "5"/>
+				<Item name = "Item_TuEssence" count = "5"/>
+			</CostItems>
+		</BeMade> 
+		<Fabao>
+		    <ActiveCondition>
+			    <Condition eventid = "KillCount" des = "Kill 1 Creature while carrying the embryo" needcount = "1" />
+			</ActiveCondition>
+			<SpecialAbility>
+			    <Ability Kind="Sync_AddFlag" sParam1="FLAG_ITEM_RESURRECTION" nParam1 = "1" Desc="At the cost of shattering, resist a death and recover all damage." />
+			</SpecialAbility>
+		</Fabao>
+	</Item>
+	<Ling>
+		<AddionLing>10</AddionLing>
+		<AddionRadius>4</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>2</AddionFailRadius>
+		
+		<Attenuation>0.06</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>34</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>Tu</Kind>
+	</Element>
+	</ThingDef>
+	
+  </List>
+</ThingDefs>

@@ -1,0 +1,592 @@
+<ThingDefs>
+<List>
+
+	<ThingDef Type="Item" Name="CW_Cloth_Base" Parent="ClothesBase">
+	
+	<Tags>
+		<Tag Name="_WearAble" Level="1"/>
+	</Tags>
+	
+	<MaxStack>1</MaxStack>
+	<Rate>1</Rate>
+	<Beauty>2</Beauty>
+	<MaxHitPoints>300</MaxHitPoints>
+	<Flammability>
+		<Flammability>0.2</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>0</BurningPoint>
+	</Flammability>
+	<Item Kind="Equipment" Lable="Clothes">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="1000"/>
+				<SalePrice Value="250" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="250" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="100" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+		<FabaoSuffix>衣,甲,御,衫</FabaoSuffix>
+        <BeMade>
+		<WorkToMake>150</WorkToMake>
+          <CostStuffCount>55</CostStuffCount>
+          <StuffCategories>
+            <Stuff name="Leather" />
+            <Stuff name="Cloth" />
+          </StuffCategories>
+        </BeMade>
+		<Rot>
+			<RotSpeed>0.01</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0.03</Attenuation>
+		<Absorption>0.4</Absorption>
+		<Accommodate>1</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>1</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>	
+
+    <ThingDef Type="Item" Name="Artifact Master Clothes" Parent="CW_Cloth_Base">
+      <ThingName>Artifact Master</ThingName>
+      <Rate>1</Rate>
+      <Desc>The fashion for artifact crafters that want to reach the Peak. \n[color=#D06508]Increases Artifact crafting and Artisanry \nas well as all Artifact craft stats.[/color]</Desc>
+      <TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+      <Color>99ffff</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Clothes" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>350</WorkToMake>
+          <CostStuffCount>700</CostStuffCount>
+          <CostItems>
+            <Item name="Item_LingWood" count="10" />
+            <Item name="Item_Cinnabar" count="50" />
+            <Item name="Item_CopperBlock" count="2" />
+            <Item name="Item_SilverBlock" count="2" />
+            <Item name="Item_DarksteelBlock" count="2" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ModelID>1</ModelID>
+          <TemperatureMaxAdd>60</TemperatureMaxAdd>
+          <TemperatureMinAdd>-60</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Artifact_Top</Modifier>
+		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>700</CostStuffCount>
+      <Light>
+        <Color>99ffff</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Artifact Master Pants" Parent="CW_Cloth_Base">
+      <ThingName>Artifact Master</ThingName>
+      <Rate>1</Rate>
+      <Desc>The fashion for artifact crafters that want to reach the Peak. \n[color=#D06508]Increases Artifact crafting and Artisanry \nas well as all Artifact craft stats.[/color]</Desc>
+      <TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+      <Color>99ffff</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Trousers" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>350</WorkToMake>
+          <CostStuffCount>700</CostStuffCount>
+          <CostItems>
+            <Item name="Item_LingWood" count="10" />
+            <Item name="Item_Cinnabar" count="50" />
+            <Item name="Item_DarksteelBlock" count="2" />
+            <Item name="Item_SilverBlock" count="2" />
+            <Item name="Item_CopperBlock" count="2" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ModelID>1</ModelID>
+          <TemperatureMaxAdd>60</TemperatureMaxAdd>
+          <TemperatureMinAdd>-60</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Artifact_Down</Modifier>
+		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>700</CostStuffCount>
+      <Light>
+        <Color>99ffff</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Body Cultivator Clothes" Parent="CW_Cloth_Base">
+      <ThingName>Body Cultivator</ThingName>
+      <Rate>1</Rate>
+      <Desc>Suitable inner disciple uniform for body cultivators. \n[color=#D06508]Increases Battle and Qi Sense \nand all Body Cultivation substats</Desc>
+      <TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+      <Color>FFFFFFFF</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Clothes" Kind="Equipment">
+	  	  	  <Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="2000"/>
+				<SalePrice Value="550" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2000" />
+				<SalePrice Value="550" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+        <BeMade>
+		<WorkToMake>250</WorkToMake>
+          <CostStuffCount>200</CostStuffCount>
+          <CostItems>
+            <Item name="Item_LingWood" count="10" />
+            <Item name="Item_LingStone" count="100" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ModelID>8</ModelID>
+          <TemperatureMaxAdd>60</TemperatureMaxAdd>
+          <TemperatureMinAdd>-60</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Body_Cult_Top</Modifier>
+		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>200</CostStuffCount>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Body Cultivator Pants" Parent="CW_Cloth_Base">
+      <ThingName>Body Cultivator</ThingName>
+      <Rate>1</Rate>
+     <Desc>Suitable inner disciple uniform for body cultivators. \n[color=#D06508]Increases Battle and Qi Sense \nand all Body Cultivation substats</Desc>
+       <TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+      <Color>FFFFFFFF</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Trousers" Kind="Equipment">
+	  	  	  <Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="2000"/>
+				<SalePrice Value="550" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2000" />
+				<SalePrice Value="550" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+        <BeMade>
+		<WorkToMake>250</WorkToMake>
+          <CostStuffCount>200</CostStuffCount>
+          <CostItems>
+            <Item name="Item_LingWood" count="10" />
+            <Item name="Item_LingStone" count="100" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ModelID>1</ModelID>
+          <TemperatureMaxAdd>60</TemperatureMaxAdd>
+          <TemperatureMinAdd>-60</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Body_Cult_Down</Modifier>
+		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>200</CostStuffCount>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Dan Creator Coat" Parent="CW_Cloth_Base">
+      <ThingName>Dan Creator Coat</ThingName>
+      <Rate>1</Rate>
+      <Desc>The Fashion for Alchemists that want to reach the Peak. \n[color=#D06508]Increases Alchemy, Medicine and Artisanry \nas well as Alchemy successesrate and speed</Desc>
+      <TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+      <Color>ccff33</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Clothes" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>350</WorkToMake>
+          <CostStuffCount>700</CostStuffCount>
+          <CostItems>
+            <Item name="Item_Dan_Ling" count="1" />
+            <Item name="Item_Dan_CureTuDamage" count="1" />
+            <Item name="Item_Dan_CureHuoDamage" count="1" />
+            <Item name="Item_Dan_CureMuDamage" count="1" />
+            <Item name="Item_Dan_CureJinDamage" count="1" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ModelID>8</ModelID>
+          <TemperatureMaxAdd>60</TemperatureMaxAdd>
+          <TemperatureMinAdd>-60</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Dan_Top</Modifier>
+		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>700</CostStuffCount>
+      <Light>
+        <Color>ccff33</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Dan Creator Pants" Parent="CW_Cloth_Base">
+      <ThingName>Dan Creator Pants</ThingName>
+       <Rate>1</Rate>
+      <Desc>The Fashion for Alchemists that want to reach the Peak. \n[color=#D06508]Increases Alchemy, Medicine and Artisanry \nas well as Alchemy suscessesrate and speed</Desc>
+      <TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+      <Color>ccff66</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Trousers" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>350</WorkToMake>
+          <CostStuffCount>700</CostStuffCount>
+          <CostItems>
+            <Item name="Item_Dan_CureHuoDamage" count="1" />
+            <Item name="Item_Dan_CureTuDamage" count="1" />
+            <Item name="Item_Dan_CureJinDamage" count="1" />
+            <Item name="Item_Dan_CureMuDamage" count="1" />
+            <Item name="Item_Dan_Ling" count="1" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ModelID>1</ModelID>
+          <TemperatureMaxAdd>60</TemperatureMaxAdd>
+          <TemperatureMinAdd>-60</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+          <Modifier>Dan_Down</Modifier>
+		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>700</CostStuffCount>
+      <Light>
+        <Color>ccff66</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Inner Disciple Cloth" Parent="CW_Cloth_Base">
+      <ThingName>Inner Disciple Cloth</ThingName>
+      <Rate>1</Rate>
+      <Desc>Cloth for Inner Disciple's with Cultivation Boost effects. \n[color=#D06508]Increase of Qi Sense and Battle \nMax Qi, Cultivation Speed and Mentalstate</Desc>
+      <TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+      <Color>ffffff</Color>
+	  	  	<KeepModelColor>0</KeepModelColor>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Clothes" Kind="Equipment">
+	  	  	  <Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="2000"/>
+				<SalePrice Value="550" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2000" />
+				<SalePrice Value="550" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+        <BeMade>
+		<WorkToMake>150</WorkToMake>
+          <CostStuffCount>200</CostStuffCount>
+          <CostItems>
+            <Item name="Item_LingWood" count="10" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ModelID>8</ModelID>
+		  <ArmorLingShield>0.5</ArmorLingShield>
+          <TemperatureMaxAdd>50</TemperatureMaxAdd>
+          <TemperatureMinAdd>-50</TemperatureMinAdd>
+		  <PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+          <NeedSex>None</NeedSex>
+          <Modifier>Inner_Top</Modifier>
+	        </Equip>
+      </Item>
+      <CostStuffCount>200</CostStuffCount>
+      <Light>
+        <Color>ffffff</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Inner Disciple Pants" Parent="CW_Cloth_Base">
+      <ThingName>Inner Disciple Pants</ThingName>
+       <Rate>1</Rate>
+      <Desc>Pants for Inner Disciple's with Cultivation Boost effects. \n[color=#D06508]Increase of Qi Sense and Battle \nMax Qi, Cultivation Speed and Mentalstate</Desc>
+      <TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+      <Color>FFFFFFFF</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Trousers" Kind="Equipment">
+	  	  <Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="2000"/>
+				<SalePrice Value="550" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="2000" />
+				<SalePrice Value="550" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+        <BeMade>
+		<WorkToMake>150</WorkToMake>
+          <CostStuffCount>200</CostStuffCount>
+          <CostItems>
+            <Item name="Item_LingWood" count="10" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ModelID>8</ModelID>
+		 <ArmorLingShield>0.5</ArmorLingShield>
+			<TemperatureMaxAdd>50</TemperatureMaxAdd>
+			<TemperatureMinAdd>-50</TemperatureMinAdd>
+			
+			<PropertyScaleFromStuff>1</PropertyScaleFromStuff>
+          <Modifier>Inner_Down</Modifier>
+        </Equip>
+      </Item>
+      <CostStuffCount>200</CostStuffCount>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Veterans Cloak" Parent="CW_Cloth_Base">
+      <ThingName>Veterans Cloak</ThingName>
+      <Rate>1</Rate>
+      <Desc>Divine Clothing for boosting Combat and Cultivation abiliies. \n[color=#D06508]Strong increase of Qi Sense and Battle abilities\nas well as Cultivation speed and Mental state</Desc>
+      <TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+      <Color>cc0066</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Clothes" Kind="Equipment">
+	  	  <Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000"/>
+				<SalePrice Value="750" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="3000" />
+				<SalePrice Value="750" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+        <BeMade>
+		<WorkToMake>750</WorkToMake>
+          <CostStuffCount>900</CostStuffCount>
+          <CostItems>
+            <Item name="Item_BlackCloth" count="500" />
+            <Item name="Item_WhiteCloth" count="500" />
+            <Item name="Item_LingWood" count="50" />
+            <Item name="Item_Ginseng" count="5" />
+            <Item name="Item_SpellPaper" count="10" />
+            <Item name="Item_Jade" count="10" />
+            <Item name="Item_SilverBlock1" count="2" />
+            <Item name="Item_CopperBlock1" count="2" />
+            <Item name="Item_DarksteelBlock" count="2" />
+            <Item name="Item_LingCrystal" count="1" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ModelID>10</ModelID>
+          <TemperatureMaxAdd>300</TemperatureMaxAdd>
+          <TemperatureMinAdd>-300</TemperatureMinAdd>
+		  <ArmorLingShield>1.5</ArmorLingShield>
+          <NeedSex>None</NeedSex>
+          <Modifier>Immortal_Top</Modifier>
+		  <PropertyScaleFromStuff>3</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>999</CostStuffCount>
+      <Light>
+        <Color>cc0066</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+	    <ThingDef Type="Item" Name="Veterans Trousers" Parent="CW_Cloth_Base">
+      <ThingName>Veterans Trousers</ThingName>
+      <Rate>1</Rate>
+     <Desc>Divine Clothing for boosting Combat and Cultivation abiliies. \n[color=#D06508]Strong increase of Qi Sense and Battle abilities\nas well as Cultivation speed and Mental state</Desc>
+     <TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+      <Color>cc3366</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Trousers" Kind="Equipment">
+	  <Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="3000"/>
+				<SalePrice Value="750" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="3000" />
+				<SalePrice Value="750" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+        <BeMade>
+		<WorkToMake>750</WorkToMake>
+          <CostStuffCount>900</CostStuffCount>
+          <CostItems>
+            <Item name="Item_BlackCloth" count="500" />
+            <Item name="Item_WhiteCloth" count="500" />
+            <Item name="Item_LingWood" count="50" />
+            <Item name="Item_Ginseng" count="5" />
+            <Item name="Item_SpellPaper" count="10" />
+            <Item name="Item_Jade" count="10" />
+            <Item name="Item_SilverBlock1" count="2" />
+            <Item name="Item_CopperBlock1" count="2" />
+            <Item name="Item_DarksteelBlock" count="2" />
+            <Item name="Item_LingCrystal" count="1" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ModelID>10</ModelID>
+          <TemperatureMaxAdd>300</TemperatureMaxAdd>
+          <TemperatureMinAdd>-300</TemperatureMinAdd>
+		  <ArmorLingShield>1.5</ArmorLingShield>
+          <NeedSex>None</NeedSex>
+          <Modifier>Immortal_Down</Modifier>
+		  		  <PropertyScaleFromStuff>3</PropertyScaleFromStuff>
+        </Equip>
+      </Item>
+      <CostStuffCount>999</CostStuffCount>
+      <Light>
+        <Color>cc3366</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+	
+
+</List>
+</ThingDefs>

@@ -1,0 +1,9 @@
+﻿<MainList><List>
+	
+    <Data Name="CWTailorTable" CMDType="Build" Kind="Builds" Type="Work" Unlock="1" Label="Wardrobe" />
+	    <Data Name="CWTextileTable" CMDType="Build" Kind="Builds" Type="Work" Unlock="1" Label="Wardrobe" />		
+		
+</List></MainList>
+
+
+

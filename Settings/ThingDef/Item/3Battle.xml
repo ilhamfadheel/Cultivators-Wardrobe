@@ -1,0 +1,619 @@
+<ThingDefs>
+<List>
+
+	<ThingDef Type="Item" Name="CW_Battle_Base" Parent="ClothesBase">
+	
+		<Tags>
+		<Tag Name="_WearAble" Level="1"/>
+	</Tags>
+	
+	<Frags>	
+		<li Frag="Coat" />
+	</Frags>	
+	<KeepModelColor>0</KeepModelColor>
+	<MaxStack>1</MaxStack>
+	<Rate>12</Rate>
+	<Beauty>12</Beauty>
+	<MaxHitPoints>3000</MaxHitPoints>
+	<Flammability>
+		<Flammability>0.1</Flammability>
+		<FlameSpawnThingDef>0</FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>2500</BurningPoint>
+	</Flammability>
+	<Item Lable="Clothes">
+		<Prices>
+			<TalkType>2</TalkType>
+			<BaseCount>1</BaseCount>
+			<li PriceTag="School">
+				<BuyPrice Value="5000"/>
+				<SalePrice Value="1250" />
+			</li>
+			<li PriceTag="Trade">
+				<BuyPrice Value="5000" />
+				<SalePrice Value="1250" />
+			</li>
+			<li PriceTag="Auction">
+				<BuyPrice Value="1000" />
+				<SalePrice Value="0" />
+			</li>
+		</Prices>
+	</Item>
+	</ThingDef>	
+	
+   <ThingDef Type="Item" Name="LingArmor_Fire" Parent="CW_Battle_Base">
+      <ThingName>Phoenix Garment</ThingName>
+      <Desc>Rise of the Phoenix\n[color=#D06508]Raises Fire Law affinity\nIncrease Fire Element Defense\nIncreases Qi and Battle\nIncreases Cultivation Speed[/color] </Desc>
+      <TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+      <Color>#ff0000</Color>
+	  	<KeepModelColor>0</KeepModelColor>
+	  <ElementKind>Huo</ElementKind>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Clothes">
+        <BeMade>
+			<WorkToMake>1500</WorkToMake>
+          <CostItems>
+		     <Item name="Item_WhiteCloth" count="1200" />
+		    <Item name="Item_QiCloth_Fire" count="800" />
+            <Item name="Item_Dan_CureShuiDamage" count="20" />
+            <Item name="Item_Fruit" count="15" />
+            <Item name="Item_Cinnabar" count="100" />
+            <Item name="Item_CopperBlock1" count="2" />
+            <Item name="Item_HuoEssence" count="1" />
+			 <Item name="Item_LingWood" count="20" />
+			 <Item name="Item_CW_TemperedSteel" count="1" />
+          </CostItems>
+		  </BeMade>
+        <Equip>
+         <Modifier>Battle_Fire_Top</Modifier>
+		  		  <ModelID>7</ModelID>
+          <TemperatureMaxAdd>600</TemperatureMaxAdd>
+          <TemperatureMinAdd>-100</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+	  	  <ArmorLingShield>3.0</ArmorLingShield>
+        </Equip>
+      </Item>
+      <Light>
+        <Color>#ff0000</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+
+	    <ThingDef Type="Item" Name="LingPants_Fire" Parent="CW_Battle_Base">
+      <ThingName>Phoenix Garment</ThingName>
+	  	<Frags>	
+		<li Frag="Pants" />
+	</Frags>
+      <Rate>12</Rate>
+      <Desc>Rise of the Phoenix\n[color=#D06508]Raises Fire Law affinity\nIncrease Fire Element Defense\nIncreases Qi and Battle\nIncreases Cultivation Speed[/color]</Desc>
+      <TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+      <Color>ff0000</Color>
+	  	  <ElementKind>Huo</ElementKind>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Trousers">
+        <BeMade>
+		<WorkToMake>1500</WorkToMake>
+          <CostItems>
+		   <Item name="Item_WhiteCloth" count="1200" />
+		    <Item name="Item_QiCloth_Fire" count="800" />
+            <Item name="Item_Dan_CureShuiDamage" count="20" />
+            <Item name="Item_Fruit" count="15" />
+            <Item name="Item_Cinnabar" count="100" />
+            <Item name="Item_CopperBlock1" count="2" />
+			<Item name="Item_SilverBlock1" count="2" />
+            <Item name="Item_HuoEssence" count="1" />
+			 <Item name="Item_LingWood" count="20" />
+			 <Item name="Item_CW_TemperedSteel" count="1" />
+          </CostItems>
+		  </BeMade>
+        <Equip>
+          <Modifier>Battle_Fire_Down</Modifier>
+		  <ModelID>7</ModelID>
+          <TemperatureMaxAdd>600</TemperatureMaxAdd>
+          <TemperatureMinAdd>-100</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+	  	  <ArmorLingShield>3.0</ArmorLingShield>
+        </Equip>
+      </Item>
+      <Light>
+        <Color>ff0000</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+
+   <ThingDef Type="Item" Name="LingArmor_Wood" Parent="CW_Battle_Base">
+      <ThingName>Gaia Garment</ThingName>
+      <Rate>12</Rate>
+      <Desc>Rise of Gaia\n[color=#D06508]Raises Wood Law affinity\nIncrease Wood Element Defense\nIncreases Qi and Battle\nIncreases Cultivation Speed[/color] </Desc>
+      <TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+      <Color>#0dff00</Color>
+	  	  <ElementKind>Mu</ElementKind>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Clothes" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>1500</WorkToMake>
+          <CostItems>
+		   <Item name="Item_WhiteCloth" count="1200" />
+		    <Item name="Item_QiCloth_Wood" count="800" />
+            <Item name="Item_Dan_CureMuDamage" count="20" />
+            <Item name="Item_Fruit" count="15" />
+            <Item name="Item_Cinnabar" count="100" />
+            <Item name="Item_CopperBlock1" count="2" />
+            <Item name="Item_SilverBlock1" count="2" />
+            <Item name="Item_MuEssence" count="1" />
+			 <Item name="Item_LingWood" count="20" />
+			 <Item name="Item_CW_TemperedSteel" count="1" />
+          </CostItems>
+		  </BeMade>
+        <Equip>
+          <Modifier>Battle_Wood_Top</Modifier>
+		            <ModelID>10</ModelID>
+          <TemperatureMaxAdd>600</TemperatureMaxAdd>
+          <TemperatureMinAdd>-100</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+	  	  <ArmorLingShield>3.0</ArmorLingShield>
+        </Equip>
+      </Item>
+      <Light>
+        <Color>#0dff00</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+
+	    <ThingDef Type="Item" Name="LingPants_Wood" Parent="CW_Battle_Base">
+      <ThingName>Gaia Garment</ThingName>
+      <Rate>12</Rate>
+      <Desc>Rise of Gaia\n[color=#D06508]Raises Wood Law affinity\nIncrease Wood Element Defense\nIncreases Qi and Battle\nIncreases Cultivation Speed[/color]</Desc>
+      <TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+      <Color>#0dff00</Color>
+	  <ElementKind>Mu</ElementKind>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Trousers" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>1500</WorkToMake>
+          <CostItems>
+		   <Item name="Item_WhiteCloth" count="1200" />
+		    <Item name="Item_QiCloth_Wood" count="800" />
+            <Item name="Item_Dan_CureMuDamage" count="20" />
+            <Item name="Item_Fruit" count="15" />
+            <Item name="Item_Cinnabar" count="100" />
+            <Item name="Item_CopperBlock1" count="2" />
+            <Item name="Item_SilverBlock1" count="2" />
+            <Item name="Item_MuEssence" count="1" />
+			 <Item name="Item_LingWood" count="20" />
+			 <Item name="Item_CW_TemperedSteel" count="1" />
+          </CostItems>
+		  </BeMade>
+        <Equip>
+          <Modifier>Battle_Wood_Down</Modifier>
+		            <ModelID>10</ModelID>
+          <TemperatureMaxAdd>600</TemperatureMaxAdd>
+          <TemperatureMinAdd>-100</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+	  	  <ArmorLingShield>3.0</ArmorLingShield>
+        </Equip>
+      </Item>
+      <Light>
+        <Color>#0dff00</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+
+   <ThingDef Type="Item" Name="LingArmor_Water" Parent="CW_Battle_Base">
+      <ThingName>Waterdragon Garment</ThingName>
+      <Rate>12</Rate>
+      <Desc>Rise of the Waterdragon\n[color=#D06508]Raises Water Law affinity\nIncrease Water Element Defense\nIncreases Qi and Battle\nIncreases Cultivation Speed[/color] </Desc>
+      <TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+      <Color>#0009ff</Color>
+	  <ElementKind>Shui</ElementKind>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Clothes" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>1500</WorkToMake>
+          <CostItems>
+		   <Item name="Item_WhiteCloth" count="1200" />
+		    <Item name="Item_QiCloth_Water" count="800" />
+            <Item name="Item_Dan_CureShuiDamage" count="20" />
+            <Item name="Item_Fruit" count="15" />
+            <Item name="Item_Cinnabar" count="100" />
+            <Item name="Item_CopperBlock1" count="2" />
+            <Item name="Item_SilverBlock1" count="2" />			
+            <Item name="Item_ShuiEssence" count="1" />
+			 <Item name="Item_LingWood" count="20" />
+			 <Item name="Item_CW_TemperedSteel" count="1" />
+          </CostItems>
+		  </BeMade>
+        <Equip>
+          <Modifier>Battle_Water_Top</Modifier>
+		  <ModelID>9</ModelID>
+          <TemperatureMaxAdd>600</TemperatureMaxAdd>
+          <TemperatureMinAdd>-100</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+	  	  <ArmorLingShield>3.0</ArmorLingShield>
+        </Equip>
+      </Item>
+      <Light>
+        <Color>#0009ff</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+
+	    <ThingDef Type="Item" Name="LingPants_Water" Parent="CW_Battle_Base">
+      <ThingName>Waterdragon Garment</ThingName>
+      <Rate>12</Rate>
+      <Desc>Rise of the Waterdragon\n[color=#D06508]Raises Water Law affinity\nIncrease Water Element Defense\nIncreases Qi and Battle\nIncreases Cultivation Speed[/color]</Desc>
+      <TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+      <Color>#0009ff</Color>
+	  <ElementKind>Shui</ElementKind>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Trousers" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>1500</WorkToMake>
+          <CostItems>
+		   <Item name="Item_WhiteCloth" count="1200" />
+		    <Item name="Item_QiCloth_Water" count="800" />
+            <Item name="Item_Dan_CureShuiDamage" count="20" />
+            <Item name="Item_Fruit" count="15" />
+            <Item name="Item_Cinnabar" count="100" />
+            <Item name="Item_CopperBlock1" count="2" />
+			<Item name="Item_SilverBlock1" count="2" />	
+            <Item name="Item_ShuiEssence" count="1" />
+			 <Item name="Item_LingWood" count="20" />
+			  <Item name="Item_CW_TemperedSteel" count="1" />
+          </CostItems>
+		  </BeMade>
+        <Equip>
+          <Modifier>Battle_Water_Down</Modifier>
+		            <ModelID>9</ModelID>
+          <TemperatureMaxAdd>600</TemperatureMaxAdd>
+          <TemperatureMinAdd>-100</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+	  	  <ArmorLingShield>3.0</ArmorLingShield>
+        </Equip>
+      </Item>
+      <Light>
+        <Color>#0009ff</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+
+   <ThingDef Type="Item" Name="LingArmor_Earth" Parent="CW_Battle_Base">
+      <ThingName>Xuán Wǔ Garment</ThingName>
+      <Rate>12</Rate>
+      <Desc>Rise of Xuán Wǔ\n[color=#D06508]Raises Earth Law affinity\nIncrease Earth Element Defense\nIncreases Qi and Battle\nIncreases Cultivation Speed[/color] </Desc>
+      <TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+      <Color>#ffb700</Color>
+	  <ElementKind>Tu</ElementKind>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Clothes" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>1500</WorkToMake>
+          <CostItems>
+		   <Item name="Item_WhiteCloth" count="1200" />
+		    <Item name="Item_QiCloth_Earth" count="800" />
+            <Item name="Item_Dan_CureTuDamage" count="20" />
+            <Item name="Item_Fruit" count="15" />
+            <Item name="Item_Cinnabar" count="100" />
+            <Item name="Item_CopperBlock1" count="2" />
+			<Item name="Item_SilverBlock1" count="2" />	
+            <Item name="Item_TuEssence" count="1" />
+			 <Item name="Item_LingWood" count="20" />
+ 			  <Item name="Item_CW_TemperedSteel" count="1" />
+          </CostItems>
+		  </BeMade>
+        <Equip>
+          <Modifier>Battle_Earth_Top</Modifier>
+		            <ModelID>6</ModelID>
+          <TemperatureMaxAdd>600</TemperatureMaxAdd>
+          <TemperatureMinAdd>-100</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+	  	  <ArmorLingShield>3.0</ArmorLingShield>
+        </Equip>
+      </Item>
+      <Light>
+        <Color>#ffb700</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+
+	    <ThingDef Type="Item" Name="LingPants_Earth" Parent="CW_Battle_Base">
+      <ThingName>Xuán Wǔ Garment</ThingName>
+      <Rate>12</Rate>
+      <Desc>Rise of Xuán Wǔ\n[color=#D06508]Raises Earth Law affinity\nIncrease Earth Element Defense\nIncreases Qi and Battle\nIncreases Cultivation Speed[/color]</Desc>
+      <TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+      <Color>#ffb700</Color>
+	  <ElementKind>Tu</ElementKind>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Trousers" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>1500</WorkToMake>
+          <CostItems>
+		   <Item name="Item_WhiteCloth" count="1200" />
+		    <Item name="Item_QiCloth_Earth" count="800" />
+            <Item name="Item_Dan_CureTuDamage" count="20" />
+            <Item name="Item_Fruit" count="15" />
+            <Item name="Item_Cinnabar" count="100" />
+            <Item name="Item_CopperBlock1" count="2" />
+			<Item name="Item_SilverBlock1" count="2" />	
+            <Item name="Item_TuEssence" count="1" />
+			 <Item name="Item_LingWood" count="20" />
+ 			  <Item name="Item_CW_TemperedSteel" count="1" />
+          </CostItems>
+		  </BeMade>
+        <Equip>
+          <Modifier>Battle_Earth_Down</Modifier>
+		            <ModelID>6</ModelID>
+          <TemperatureMaxAdd>600</TemperatureMaxAdd>
+          <TemperatureMinAdd>-100</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+	  	  <ArmorLingShield>3.0</ArmorLingShield>
+        </Equip>
+      </Item>
+      <Light>
+        <Color>#ffb700</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+
+   <ThingDef Type="Item" Name="LingArmor_Metal" Parent="CW_Battle_Base">
+      <ThingName>White Tiger Garment</ThingName>
+      <Rate>12</Rate>
+      <Desc>Rise of the White Tiger\n[color=#D06508]Raises Metal Law affinity\nIncrease Metal Element Defense\nIncreases Qi and Battle\nIncreases Cultivation Speed[/color] </Desc>
+      <TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+      <Color>#fffd00</Color>
+	  <ElementKind>Jin</ElementKind>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Clothes" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>1500</WorkToMake>
+          <CostItems>
+		   <Item name="Item_WhiteCloth" count="1200" />
+		    <Item name="Item_QiCloth_Metal" count="800" />
+            <Item name="Item_Dan_CureJinDamage" count="20" />
+            <Item name="Item_Fruit" count="15" />
+            <Item name="Item_Cinnabar" count="100" />
+            <Item name="Item_CopperBlock1" count="2" />
+			<Item name="Item_SilverBlock1" count="2" />	
+            <Item name="Item_JinEssence" count="1" />
+			 <Item name="Item_LingWood" count="20" />
+ 			  <Item name="Item_CW_TemperedSteel" count="1" />
+          </CostItems>
+		  </BeMade>
+        <Equip>
+          <Modifier>Battle_Metal_Top</Modifier>
+		            <ModelID>8</ModelID>
+          <TemperatureMaxAdd>600</TemperatureMaxAdd>
+          <TemperatureMinAdd>-100</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+	  	  <ArmorLingShield>3.0</ArmorLingShield>
+        </Equip>
+      </Item>
+      <Light>
+        <Color>#fffd00</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+
+	    <ThingDef Type="Item" Name="LingPants_Metal" Parent="CW_Battle_Base">
+      <ThingName>White Tiger Garment</ThingName>
+      <Rate>12</Rate>
+      <Desc>Rise of the White Tiger\n[color=#D06508]Raises Metal Law affinity\nIncrease Metal Element Defense\nIncreases Qi and Battle\nIncreases Cultivation Speed[/color]</Desc>
+      <TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+      <Color>#fffd00</Color>
+	  <ElementKind>Jin</ElementKind>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Trousers" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>1500</WorkToMake>
+          <CostItems>
+		   <Item name="Item_WhiteCloth" count="1200" />
+		    <Item name="Item_QiCloth_Metal" count="800" />
+            <Item name="Item_Dan_CureJinDamage" count="20" />
+            <Item name="Item_Fruit" count="15" />
+            <Item name="Item_Cinnabar" count="100" />
+            <Item name="Item_CopperBlock1" count="2" />
+			<Item name="Item_SilverBlock1" count="2" />	
+            <Item name="Item_JinEssence" count="1" />
+			 <Item name="Item_LingWood" count="20" />
+ 			  <Item name="Item_CW_TemperedSteel" count="1" />
+          </CostItems>
+		  </BeMade>
+        <Equip>
+          <Modifier>Battle_Metal_Down</Modifier>
+		            <ModelID>8</ModelID>
+          <TemperatureMaxAdd>600</TemperatureMaxAdd>
+          <TemperatureMinAdd>-100</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+	  	  <ArmorLingShield>3.0</ArmorLingShield>
+        </Equip>
+      </Item>
+      <Light>
+        <Color>#fffd00</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+
+   <ThingDef Type="Item" Name="LingArmor_Elementless" Parent="CW_Battle_Base">
+      <ThingName>Void Garment</ThingName>
+      <Rate>12</Rate>
+      <Desc>Emerging Void\n[color=#D06508]Raises Elementless Law affinity\nIncrease All Element Defense\nIncreases Qi and Battle\nIncreases Cultivation Speed[/color] </Desc>
+      <TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+      <Color>#ff00f9</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Clothes" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>1500</WorkToMake>
+          <CostItems>
+		   <Item name="Item_WhiteCloth" count="1200" />
+		    <Item name="Item_QiCloth_Violet" count="800" />
+            <Item name="Item_Dan_CureJinDamage" count="4" />
+			 <Item name="Item_Dan_CureShuiDamage" count="4" />
+			<Item name="Item_Dan_CureHuoDamage" count="4" />
+			<Item name="Item_Dan_CureTuDamage" count="4" />
+			<Item name="Item_Dan_CureMuDamage" count="4" />
+            <Item name="Item_Fruit" count="15" />
+            <Item name="Item_Cinnabar" count="100" />
+            <Item name="Item_CopperBlock1" count="2" />
+			<Item name="Item_SilverBlock1" count="2" />	
+            <Item name="Item_JinEssence" count="1" />
+			 <Item name="Item_LingWood" count="20" />
+			  <Item name="Item_CW_TemperedSteel" count="1" />
+          </CostItems>
+		  </BeMade>
+        <Equip>
+          <Modifier>Battle_Elementless_Top</Modifier>
+		            <ModelID>7</ModelID>
+          <TemperatureMaxAdd>600</TemperatureMaxAdd>
+          <TemperatureMinAdd>-100</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+	  	  <ArmorLingShield>3.0</ArmorLingShield>
+        </Equip>
+      </Item>
+      <Light>
+        <Color>#ff00f9</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+
+	    <ThingDef Type="Item" Name="LingPants_Elementless" Parent="CW_Battle_Base">
+      <ThingName>Void Garment</ThingName>
+      <Rate>12</Rate>
+      <Desc>Emerging Void\n[color=#D06508]Raises Elementless Law affinity\nIncrease All Element Defense\nIncreases Qi and Battle\nIncreases Cultivation Speed[/color]</Desc>
+      <TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+      <Color>#ff00f9</Color>
+      <OtherWorld>1</OtherWorld>
+      <DownMod>1</DownMod>
+      <Item Lable="Trousers" Kind="Equipment">
+        <BeMade>
+		<WorkToMake>1500</WorkToMake>
+          <CostItems>
+		   <Item name="Item_WhiteCloth" count="1200" />
+		    <Item name="Item_QiCloth_Violet" count="800" />
+            <Item name="Item_Dan_CureJinDamage" count="4" />
+			 <Item name="Item_Dan_CureShuiDamage" count="4" />
+			<Item name="Item_Dan_CureHuoDamage" count="4" />
+			<Item name="Item_Dan_CureTuDamage" count="4" />
+			<Item name="Item_Dan_CureMuDamage" count="4" />
+            <Item name="Item_Fruit" count="15" />
+            <Item name="Item_Cinnabar" count="100" />
+            <Item name="Item_CopperBlock1" count="2" />
+			<Item name="Item_SilverBlock1" count="2" />	
+			 <Item name="Item_LingWood" count="20" />
+		  <Item name="Item_CW_TemperedSteel" count="1" />
+          </CostItems>
+		  </BeMade>
+        <Equip>
+          <Modifier>Battle_Elementless_Down</Modifier>
+		            <ModelID>7</ModelID>
+          <TemperatureMaxAdd>600</TemperatureMaxAdd>
+          <TemperatureMinAdd>-100</TemperatureMinAdd>
+          <NeedSex>None</NeedSex>
+	  	  <ArmorLingShield>3.0</ArmorLingShield>
+        </Equip>
+      </Item>
+      <Light>
+        <Color>#ff00f9</Color>
+      </Light>
+      <ProduceMode>
+        <ProduceBuildings>
+          <li>
+            <Building>CWTailorTable</Building>
+            <Count>1</Count>
+          </li>
+        </ProduceBuildings>
+      </ProduceMode>
+    </ThingDef>
+
+
+	</List>
+</ThingDefs>
+
+	
